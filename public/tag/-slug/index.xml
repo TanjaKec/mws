@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Demo | tanja&#39;s website</title>
+    <title>Source Themes | tanja&#39;s website</title>
     <link>/tag/-slug/</link>
       <atom:link href="/tag/-slug/index.xml" rel="self" type="application/rss+xml" />
-    <description>Demo</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <description>Source Themes</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 08 Jul 2014 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/TK.jpg</url>
-      <title>Demo</title>
+      <title>Source Themes</title>
       <link>/tag/-slug/</link>
     </image>
     
     <item>
-      <title>External Project</title>
-      <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/external-project/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
-</rss>
->
+      <title>The Boka Kotorska$\colon$ Vernacular Response to Sustainable Urban Environments.</title>
+      <link>/publication/vei/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/vei/</guid>
       <description>
 
 
@@ -195,4 +189,3 @@ ting?&lt;/strong&gt; View the &lt;a href=&#34;https://sourcethemes.com/academic/
     
   </channel>
 </rss>
-/rss>
