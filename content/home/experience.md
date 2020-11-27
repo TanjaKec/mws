@@ -77,7 +77,7 @@ experience:
     Responsibilities include:
     * Creating DS course materials and teaching aids that support content delivery and skills assessments
     * Carrying out statistical analysis and work with the clients to interpret the results and how they impact their business
-    * Engaging with youth community through the [klikR](http://klikr.rbind.io) initiative
+    * Engaging youth community through the [klikR](http://klikr.rbind.io) initiative
   location: U.K.
   title: Co-Founder
 - company: R-Ladies
