@@ -1,0 +1,1305 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.0 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Tatjana Kecojevic">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="R Markdown For patients critically ill with COVID-19, access to a ventilator could be a matter of life or death. In early March at the beginning of COVID-19 pandemic the Serbian government was not disclosing the information about the available number of ventilators to its citizens.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/ventilators/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#EF525B">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/post/ventilators/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@Tatjana_Kec">
+  <meta property="twitter:creator" content="@Tatjana_Kec">
+  
+  <meta property="og:site_name" content="tanja&#39;s website">
+  <meta property="og:url" content="/post/ventilators/">
+  <meta property="og:title" content="Coronavirus: See How Many Medical Ventilators There Are in Your Town | tanja&#39;s website">
+  <meta property="og:description" content="R Markdown For patients critically ill with COVID-19, access to a ventilator could be a matter of life or death. In early March at the beginning of COVID-19 pandemic the Serbian government was not disclosing the information about the available number of ventilators to its citizens."><meta property="og:image" content="/post/ventilators/featured.jpg">
+  <meta property="twitter:image" content="/post/ventilators/featured.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-03-27T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-03-27T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/ventilators/"
+  },
+  "headline": "Coronavirus: See How Many Medical Ventilators There Are in Your Town",
+  
+  "image": [
+    "/post/ventilators/featured.jpg"
+  ],
+  
+  "datePublished": "2020-03-27T00:00:00Z",
+  "dateModified": "2020-03-27T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Tatjana Kecojevic"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Tatjana Kecojevic",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "R Markdown For patients critically ill with COVID-19, access to a ventilator could be a matter of life or death. In early March at the beginning of COVID-19 pandemic the Serbian government was not disclosing the information about the available number of ventilators to its citizens."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Coronavirus: See How Many Medical Ventilators There Are in Your Town | tanja&#39;s website</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">tanja&#39;s website</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">tanja&#39;s website</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#hero"><span>Demo</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>Coronavirus: See How Many Medical Ventilators There Are in Your Town</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Mar 27, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    8 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 405px;">
+  <div style="position: relative">
+    <img src="/post/ventilators/featured_hu47136e30d89bef1661399378459c0ade_2881852_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet/leaflet.js"></script>
+<link href="/rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet-binding/leaflet.js"></script>
+
+
+<div id="r-markdown" class="section level2">
+<h2>R Markdown</h2>
+<p>For patients critically ill with COVID-19, access to a ventilator could be a matter of life or death. In early March at the beginning of COVID-19 pandemic the Serbian government was not disclosing the information about the available number of ventilators to its citizens. <a href="https://www.cins.rs/en/">CINS’</a> journalists took the initiative to obtain this information and to make it available to the public in an article concerning respiratory equipment in the current crisis. Shortly after, the government took more serious action towards protecting its citizens against the virus.</p>
+<p>As a data scientist I was happy and pleased to help and assist CINS’ journalist’s in making interactive maps informing readers of their findings.</p>
+<p>This article can be found at
+<a href="https://www.cins.rs/en/coronavirus-see-how-many-medical-ventilators-there-are-in-your-town/" class="uri">https://www.cins.rs/en/coronavirus-see-how-many-medical-ventilators-there-are-in-your-town/</a></p>
+<p>To create an interactive map like this in R you will need the <code>leaflet</code> package. <strong>Leaflet</strong> is one of the most popular open-source JavaScript libraries for interactive maps that was integrated into R, by a team of people from RStudio. We will illustrate how easy it is to plot a location map using the leaflet package, but you can learn more about this package from the <a href="https://rstudio.github.io/leaflet/">Leaflet for R</a> website.</p>
+<p>Here is what we did.</p>
+<pre class="r"><code>library(leaflet)
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(tidyverse))
+
+mydata &lt;- read.csv(&#39;Gradovi.csv&#39;, 
+                    header=T, 
+                    na.strings=c(&quot;&quot;,&quot;NA&quot;),
+                    stringsAsFactor = FALSE) 
+
+glimpse(mydata)</code></pre>
+<pre><code>## Rows: 69
+## Columns: 7
+## $ Mesta         &lt;chr&gt; &quot;Bačka Topola&quot;, &quot;Subotica&quot;, &quot;Kikinda&quot;, &quot;Senta&quot;, &quot;Zrenja…
+## $ Latitude      &lt;dbl&gt; 45.81442, 46.10055, 45.82728, 45.92601, 45.38156, 45.77…
+## $ Longitude     &lt;dbl&gt; 19.63796, 19.66506, 20.46152, 20.07809, 20.36857, 19.11…
+## $ Koristi.se    &lt;int&gt; 1, 19, 6, 6, 13, 14, 3, 1, 4, 14, 98, 48, 1, 1, 0, 16, …
+## $ Ne.koristi.se &lt;int&gt; 0, 0, 0, 1, 0, 0, 0, 0, 2, 0, 5, 8, 0, 0, 1, 0, 0, 0, 0…
+## $ Nepoznato     &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0…
+## $ Ukupno        &lt;int&gt; 1, 19, 6, 7, 13, 14, 3, 1, 6, 14, 103, 56, 1, 1, 1, 16,…</code></pre>
+<pre class="r"><code>minlat &lt;- min(mydata$Latitude)
+maxlat &lt;- max(mydata$Latitude)
+minlng &lt;- min(mydata$Longitude)
+maxlng &lt;- max(mydata$Longitude)
+
+mydata %&gt;% 
+   leaflet() %&gt;% 
+   addTiles() %&gt;%
+   fitBounds(~minlng, ~minlat, ~maxlng, ~maxlat) %&gt;% 
+   addCircles(lng = ~Longitude, lat = ~Latitude,
+              radius = 750, weight = 7, color = &quot;black&quot;,
+              fillColor = &quot;red&quot;, fillOpacity = 0.7,  
+              popup = ~paste(&quot;&lt;b&gt;&quot;, Mesta, &quot;&lt;/b&gt;&quot;, &quot;&lt;br&gt;Koristi se = &quot;, Koristi.se,&quot;&lt;br&gt;Ne koristi se = &quot;,  Ne.koristi.se, &quot;&lt;br&gt; Nepoznato =&quot;, Nepoznato, &quot;&lt;br&gt;Total =&quot;, Ukupno, &quot;&lt;br&gt;&quot;))</code></pre>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircles","args":[[45.8144238,46.1005467,45.8272842,45.9260128,45.3815612,45.773295,44.9018213,45.1071651,45.1181926,44.874,45.2671352,45.2208633,45.6138162,45.415745,45.2497275,45.5701534,45.0485391,45.00806,45.1287251,45.1011851,44.9794968,44.6034915,44.786568,44.5313463,44.7488612,44.2743141,44.367191,44.6658941,44.37366517,44.4766526,44.6208353,44.3082168,44.0127932,44.24984,43.858616,43.9777294,43.925537,44.0698918,44.6035552,44.2288747,44.4191965,43.9015048,43.5660829,43.9705397,43.4676913,45.8461,43.5827565,43.2741145,43.8555729,43.7504777,43.5827565,43.3893574,43.8555729,43.8914144,44.0207262,43.1406976,43.7238483,43.5763232,43.3209022,43.5409901,43.2367913,43.0638347,43.1557012,42.9963758,42.5450345,42.6907233,42.3091712,42.8913909,42.6014008],[19.6379551,19.6650593,20.4615173,20.0780937,20.3685737,19.1151469,21.4232908,20.6595515,21.2944883,20.6475673,19.8335496,19.8470699,20.0459853,19.8931066,19.3967698,19.6449683,20.0808092,19.82222,19.7897422,19.8616812,19.6209662,20.45241,20.4489216,19.2067663,19.6907882,19.8903398,20.9604515,20.9335169,21.41833166,21.6742577,21.1842054,20.5562765,20.9114225,21.2008216,21.403911,21.2572719,21.3748327,22.0985086,22.6098737,22.5310674,21.9495234,22.2738011,22.2466754,19.5649108,19.8125507,20.0365,19.5266606,20.0032054,19.842471,19.7142007,19.5266606,19.6463666,19.842471,20.3501652,20.4633133,20.5213617,20.6872542,21.3335812,21.8957589,21.7183695,21.5915831,22.4061647,22.5856811,21.944034,21.9002712,22.1720303,21.6498686,20.8659995,21.1918761],750,null,null,{"interactive":true,"className":"","stroke":true,"color":"black","weight":7,"opacity":0.5,"fill":true,"fillColor":"red","fillOpacity":0.7},["<b> Bačka Topola <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Subotica <\/b> <br>Koristi se =  19 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 19 <br>","<b> Kikinda <\/b> <br>Koristi se =  6 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 6 <br>","<b> Senta <\/b> <br>Koristi se =  6 <br>Ne koristi se =  1 <br> Nepoznato = 0 <br>Total = 7 <br>","<b> Zrenjanin <\/b> <br>Koristi se =  13 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 13 <br>","<b> Sombor <\/b> <br>Koristi se =  14 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 14 <br>","<b> Bela Crkva <\/b> <br>Koristi se =  3 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 3 <br>","<b> Kovačica <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Vršac <\/b> <br>Koristi se =  4 <br>Ne koristi se =  2 <br> Nepoznato = 0 <br>Total = 6 <br>","<b> Pančevo <\/b> <br>Koristi se =  14 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 14 <br>","<b> Novi Sad <\/b> <br>Koristi se =  98 <br>Ne koristi se =  5 <br> Nepoznato = 6 <br>Total = 103 <br>","<b> Sremska Kamenica <\/b> <br>Koristi se =  48 <br>Ne koristi se =  8 <br> Nepoznato = 0 <br>Total = 56 <br>","<b> Bečej <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Temerin <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Bačka Palanka <\/b> <br>Koristi se =  0 <br>Ne koristi se =  1 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Vrbas <\/b> <br>Koristi se =  16 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 16 <br>","<b> Inđija <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Ruma <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Vrdnik <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Irig <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Sremska Mitrovica <\/b> <br>Koristi se =  8 <br>Ne koristi se =  1 <br> Nepoznato = 0 <br>Total = 9 <br>","<b> Barajevo <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Beograd <\/b> <br>Koristi se =  430 <br>Ne koristi se =  30 <br> Nepoznato = 0 <br>Total = 460 <br>","<b> Loznica <\/b> <br>Koristi se =  5 <br>Ne koristi se =  1 <br> Nepoznato = 0 <br>Total = 6 <br>","<b> Šabac <\/b> <br>Koristi se =  5 <br>Ne koristi se =  1 <br> Nepoznato = 0 <br>Total = 6 <br>","<b> Valjevo <\/b> <br>Koristi se =  9 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 9 <br>","<b> Smederevska Palanka <\/b> <br>Koristi se =  3 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 3 <br>","<b> Smederevo <\/b> <br>Koristi se =  10 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 10 <br>","<b> Petrovac <\/b> <br>Koristi se =  2 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 2 <br>","<b> Kučevo <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Požarevac <\/b> <br>Koristi se =  8 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 8 <br>","<b> Aranđelovac <\/b> <br>Koristi se =  4 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 4 <br>","<b> Kragujevac <\/b> <br>Koristi se =  35 <br>Ne koristi se =  2 <br> Nepoznato = 3 <br>Total = 40 <br>","<b> Svilajnac <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Paraćin <\/b> <br>Koristi se =  3 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 3 <br>","<b> Jagodina <\/b> <br>Koristi se =  4 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 4 <br>","<b> Ćuprija <\/b> <br>Koristi se =  7 <br>Ne koristi se =  2 <br> Nepoznato = 0 <br>Total = 9 <br>","<b> Bor <\/b> <br>Koristi se =  3 <br>Ne koristi se =  2 <br> Nepoznato = 0 <br>Total = 5 <br>","<b> Kladovo <\/b> <br>Koristi se =  1 <br>Ne koristi se =  1 <br> Nepoznato = 0 <br>Total = 2 <br>","<b> Negotin <\/b> <br>Koristi se =  2 <br>Ne koristi se =  1 <br> Nepoznato = 0 <br>Total = 3 <br>","<b> Majdanpek <\/b> <br>Koristi se =  2 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 2 <br>","<b> Zaječar <\/b> <br>Koristi se =  8 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 8 <br>","<b> Knjaževac <\/b> <br>Koristi se =  3 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 3 <br>","<b> Bajina Bašta <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Nova Varoš <\/b> <br>Koristi se =  3 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 3 <br>","<b> Požega <\/b> <br>Koristi se =  3 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 3 <br>","<b> Priboj <\/b> <br>Koristi se =  3 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 3 <br>","<b> Sjenica <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Užice <\/b> <br>Koristi se =  2 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 2 <br>","<b> Čajetina <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Priboj <\/b> <br>Koristi se =  2 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 2 <br>","<b> Prijepolje <\/b> <br>Koristi se =  2 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 2 <br>","<b> Užice <\/b> <br>Koristi se =  10 <br>Ne koristi se =  3 <br> Nepoznato = 0 <br>Total = 13 <br>","<b> Čačak <\/b> <br>Koristi se =  16 <br>Ne koristi se =  1 <br> Nepoznato = 0 <br>Total = 17 <br>","<b> Gornji Milanovac <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Novi Pazar <\/b> <br>Koristi se =  3 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 3 <br>","<b> Kraljevo <\/b> <br>Koristi se =  10 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 10 <br>","<b> Kruševac <\/b> <br>Koristi se =  6 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 6 <br>","<b> Niš <\/b> <br>Koristi se =  43 <br>Ne koristi se =  2 <br> Nepoznato = 0 <br>Total = 45 <br>","<b> Aleksinac <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Prokuplje <\/b> <br>Koristi se =  4 <br>Ne koristi se =  6 <br> Nepoznato = 0 <br>Total = 4 <br>","<b> Babušnica <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Pirot <\/b> <br>Koristi se =  7 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 7 <br>","<b> Leskovac <\/b> <br>Koristi se =  7 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 7 <br>","<b> Vranje <\/b> <br>Koristi se =  13 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 13 <br>","<b> Surdulica <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>","<b> Preševo <\/b> <br>Koristi se =  2 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 2 <br>","<b> Kosovska Mitrovica <\/b> <br>Koristi se =  7 <br>Ne koristi se =  2 <br> Nepoznato = 0 <br>Total = 9 <br>","<b> Gračanica <\/b> <br>Koristi se =  1 <br>Ne koristi se =  0 <br> Nepoznato = 0 <br>Total = 1 <br>"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null,null]}],"fitBounds":[42.3091712,19.1151469,46.1005467,22.6098737,[]],"limits":{"lat":[42.3091712,46.1005467],"lng":[19.1151469,22.6098737]}},"evals":[],"jsHooks":[]}</script>
+<hr />
+<p>This was data democracy in action, a means of holding governments to account and nudging them into action. By empowering citizens to be data literate they are able to cut through the fog of misinformation and to have a deeper understanding of the world we live in. There’s no need for everyone to be data scientist, but there is an urgent need for dataliteracy to be available to everyone. Data is democracy.</p>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/ventilators/&amp;text=Coronavirus:%20See%20How%20Many%20Medical%20Ventilators%20There%20Are%20in%20Your%20Town" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/ventilators/&amp;t=Coronavirus:%20See%20How%20Many%20Medical%20Ventilators%20There%20Are%20in%20Your%20Town" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Coronavirus:%20See%20How%20Many%20Medical%20Ventilators%20There%20Are%20in%20Your%20Town&amp;body=/post/ventilators/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/ventilators/&amp;title=Coronavirus:%20See%20How%20Many%20Medical%20Ventilators%20There%20Are%20in%20Your%20Town" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Coronavirus:%20See%20How%20Many%20Medical%20Ventilators%20There%20Are%20in%20Your%20Town%20/post/ventilators/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/ventilators/&amp;title=Coronavirus:%20See%20How%20Many%20Medical%20Ventilators%20There%20Are%20in%20Your%20Town" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="/"><img class="avatar mr-3 avatar-square" src="/author/tatjana-kecojevic/avatar_hu49847f75629a31f22bb512e73346cf0d_386378_270x270_fill_q90_lanczos_center.jpg" alt="Tatjana Kecojevic"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Tatjana Kecojevic</a></h5>
+      <h6 class="card-subtitle">statistician and ever evolving data scientist</h6>
+      <p class="card-text">My research work has developed my knowledge and skills within the area of applied statistical modelling. As such, the area of my research enhances the opportunities for cross discipline projects.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/Tatjana_Kec" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=0Sql8GUAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/TanjaKec" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/tatjana-kecojevic-803704143/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/SQL.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/wowchemy.min.59419d2c9809de125013c581da371866.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
