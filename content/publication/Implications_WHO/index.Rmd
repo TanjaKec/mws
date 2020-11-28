@@ -22,7 +22,7 @@ publishDate: "2009-04-01T00:00:00Z"
 slides: 
 summary: 
 tags:
-- Source Themes
+#- Source Themes
 title: The Implications of Using the World Health Organization Child Growth Standards in Saudi Arabia
 url_code: ""
 url_dataset: ""
@@ -35,10 +35,6 @@ url_video: ""
 ---
 
 {{% alert note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /alert %}}
-
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
+Click the *Cite* button above to enable to import publication metadata into your reference management software.
 {{% /alert %}}
 

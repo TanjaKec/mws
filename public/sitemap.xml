@@ -173,11 +173,6 @@
   </url>
   
   <url>
-    <loc>/tag/-slug/</loc>
-    <lastmod>2014-07-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/vei/</loc>
     <lastmod>2014-07-08T00:00:00+00:00</lastmod>
   </url>
@@ -225,6 +220,11 @@
   <url>
     <loc>/publication/comparison_cdc/</loc>
     <lastmod>2008-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/adiposity/</loc>
+    <lastmod>2006-09-01T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
