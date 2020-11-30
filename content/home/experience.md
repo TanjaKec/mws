@@ -60,7 +60,7 @@ experience:
     Responsibilities include:
     * Organiser and coordinator of the WiDS Subotica events
   location: Serbia
-  title: Ambasador
+  title: Ambassador
 - company: R Forwards
   company_url: "https://forwards.github.io/"
   date_start: "2018-07-01"
