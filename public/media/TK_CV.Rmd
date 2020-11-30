@@ -307,7 +307,7 @@ T. Kecojevic. *Using LMS method for Reference Growth Charts*, Mathematics Resear
 
 ### POSTER PRESENTATIONS 
 
-T. Kecojevic. *Shiny App: Bootstrap to Comprehend Statistical Significance*, Advances in Data Science; Data Science Institute of the University of Manchester, UK; 15-16 May 2017.
+T. Kecojevic. *Shiny App: Bootstrap to Comprehend Statistical Significance*, Advances in Data Science; Data Science Institute of the University of Manchester, UK; 15-16 May 2017
 
 ### CONFERENCE MODERATION
 

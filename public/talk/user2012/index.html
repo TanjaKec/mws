@@ -281,14 +281,14 @@
   
   <meta property="og:site_name" content="tanja&#39;s website">
   <meta property="og:url" content="/talk/user2012/">
-  <meta property="og:title" content="Example Talk | tanja&#39;s website">
+  <meta property="og:title" content="Smooth Bootstrap Inference for Parametric Quantile Regression | tanja&#39;s website">
   <meta property="og:description" content="An example talk using Academic&#39;s Markdown slides feature."><meta property="og:image" content="/talk/user2012/featured.jpg">
   <meta property="twitter:image" content="/talk/user2012/featured.jpg"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2017-01-01T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2012-06-15T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2030-06-01T13:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2012-06-12T00:00:00&#43;00:00">
   
 
   
@@ -309,30 +309,16 @@
     "@type": "WebPage",
     "@id": "/talk/user2012/"
   },
-  "name": "Example Talk",
-  
-  "location": {
-    "@type": "Place",
-    "name": "Source Themes HQ",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "450 Serra Mall",
-      "addressLocality": "Stanford",
-      "postalCode": "94305",
-      "addressRegion": "CA",
-      "addressCountry": "United States"
-    }
-    
-  },
+  "name": "Smooth Bootstrap Inference for Parametric Quantile Regression",
   
   
   "image": [
     "/talk/user2012/featured.jpg"
   ],
   
-  "startDate": "2030-06-01T13:00:00Z",
+  "startDate": "2012-06-12T00:00:00Z",
   
-  "endDate": "2030-06-01T15:00:00Z",
+  "endDate": "2012-06-15T00:00:00Z",
   
   
   "performer": {
@@ -356,7 +342,7 @@
 
 
 
-  <title>Example Talk | tanja&#39;s website</title>
+  <title>Smooth Bootstrap Inference for Parametric Quantile Regression | tanja&#39;s website</title>
 
 </head>
 
@@ -724,12 +710,10 @@
 
   
   
-    
-  
 
 
 <div class="article-container pt-3">
-  <h1>Example Talk</h1>
+  <h1>Smooth Bootstrap Inference for Parametric Quantile Regression</h1>
 
   
 
@@ -784,28 +768,24 @@
 
 
   
-
-
-
-
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="/project/internal-project/">
-    Project
-  </a>
+    
   
 
 
 
+<a class="btn btn-outline-primary my-1 mr-1" href="/useR_2012.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
 
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="/slides/example/" target="_blank">
-    Slides
-  </a>
+
+
+
+
+
+
+
+
+
   
 
 
@@ -823,7 +803,7 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://twitter.com/georgecushen" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://twitter.com/Tatjana_Keco" target="_blank" rel="noopener">
     <i class="fab fa-twitter mr-1"></i>
     Follow
   </a>
@@ -835,10 +815,10 @@
 </div>
 
 
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 514px;">
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 674px; max-height: 616px;">
   <div style="position: relative">
-    <img src="/talk/user2012/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_620088_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
-    <span class="article-header-caption">Image credit: <a href="https://unsplash.com/photos/bzdhc5b3Bxs"><strong>Unsplash</strong></a></span>
+    <img src="/talk/user2012/featured.jpg" alt="" class="featured-image">
+    
   </div>
 </div>
 
@@ -848,7 +828,7 @@
 
     
       <h3>Abstract</h3>
-      <p class="pub-abstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam.</p>
+      <p class="pub-abstract">Assessing the accuracy of the $\tau^{th}$ ($\tau\in [0,1]$) quantile parametric regression function estimate (see Koenker and Bassett 1978) requires valid and reliable procedures for estimating the asymptotic variance-covariance matrix of the estimated parameters. This covariance matrix depends on the reciprocal of the density function of the error (sparsity function) evaluated at the quantile of interest which, particularly for heteroscedastic non-iid cases, results in a complex and difficult estimation problem. It is well-known that the construction of confidence intervals based on the quantile regression estimator can be simplified by using a bootstrap. To construct confidence intervals in quantile regression we propose an effective and easy to apply bootstrap method based on the idea of Silverman&rsquo;s (1986) kernel smoothing approach. This proposed bootstrapping method requires the estimation of the conditional variance function of the fitted quantile. After fitting the $\tau^{th}$ quantile function, we obtain the residuals, which are squared and centered to zero. Estimating the conditional mean function of the centered squared residuals gives the conditional variance function of the errors about the estimated $\tau^{th}$ quantile. Using an estimate of the conditional variance function allows the standardisation of the residuals which are then used in Silverman&rsquo;s (1986) kernel smoothing bootstrapping procedure to make inferences about the parameters of the $\tau^{th}$ quantile function. In this talk we will discuss a variety of approaches to estimate the conditional variance function. These will include the adaptation of GLMs as well as non-parametric regression based estimation. These different approaches have been assessed under various data structures simulated in R and compared to several existing methods computable in the quantreg package contributed by Roger Koenker. The simulation studies show good results in terms of coverage probability and the spread of the constructed parameters confidence intervals when compared with existing methods. This methodology is also applicable to a wider class of regression models with heteroscedastic errors where the transformation to normality is difficult to achieve or maybe undesirable given a need to preserve the original data scale.</p>
     
 
     <div class="row">
@@ -857,7 +837,7 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Date</div>
           <div class="col-12 col-md-9">
-            Jun 1, 2030 1:00 PM &mdash; 3:00 PM
+            Jun 12, 2012 12:00 AM &mdash; Jun 15, 2012 12:00 AM
           </div>
         </div>
       </div>
@@ -872,8 +852,8 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Event</div>
           <div class="col-12 col-md-9">
-            <a href="https://example.org" target="_blank" rel="noopener">
-            Academic Theme Conference
+            <a href="https://www.r-project.org/conferences/useR-2012/draft-abstract-booklet-06122012.pdf" target="_blank" rel="noopener">
+            useR!2012, The 8th International R Users Meeting
             </a>
           </div>
         </div>
@@ -884,38 +864,21 @@
     
 
     
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Location</div>
-          <div class="col-12 col-md-9">Source Themes HQ</div>
-          
-            <div class="col-md-3"></div>
-            <div class="col-12 col-md-9">450 Serra Mall, Stanford, CA 94305</div>
-          
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
 
     <div class="space-below"></div>
 
     <div class="article-style">
-      <div class="alert alert-note">
+      
+
+
+<p>
+
+<div class="alert alert-note">
   <div>
     Click on the <strong>Slides</strong> button above to view the built-in slides feature.
   </div>
 </div>
-<p>Slides can be added in a few ways:</p>
-<ul>
-<li><strong>Create</strong> slides using Academic&rsquo;s <a href="https://sourcethemes.com/academic/docs/managing-content/#create-slides" target="_blank" rel="noopener"><em>Slides</em></a> feature and link using <code>slides</code> parameter in the front matter of the talk file</li>
-<li><strong>Upload</strong> an existing slide deck to <code>static/</code> and link using <code>url_slides</code> parameter in the front matter of the talk file</li>
-<li><strong>Embed</strong> your slides (e.g. Google Slides) or presentation video on this page using <a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/" target="_blank" rel="noopener">shortcodes</a>.</li>
-</ul>
-<p>Further talk details can easily be added to this page using <em>Markdown</em> and $\rm \LaTeX$ math code.</p>
+</p>
 
     </div>
 
@@ -925,6 +888,20 @@
 
 
 
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/-slug/">quantile regression</a>
+  
+  <a class="badge badge-light" href="/tag/-slug/">bootstrapping</a>
+  
+  <a class="badge badge-light" href="/tag/-slug/">kernel smoothing</a>
+  
+  <a class="badge badge-light" href="/tag/-slug/">general linear model</a>
+  
+  <a class="badge badge-light" href="/tag/-slug/">rstats</a>
+  
+</div>
 
 
 
@@ -939,7 +916,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/talk/user2012/&amp;text=Example%20Talk" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/talk/user2012/&amp;text=Smooth%20Bootstrap%20Inference%20for%20Parametric%20Quantile%20Regression" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -952,7 +929,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/talk/user2012/&amp;t=Example%20Talk" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/talk/user2012/&amp;t=Smooth%20Bootstrap%20Inference%20for%20Parametric%20Quantile%20Regression" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -965,7 +942,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Example%20Talk&amp;body=/talk/user2012/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Smooth%20Bootstrap%20Inference%20for%20Parametric%20Quantile%20Regression&amp;body=/talk/user2012/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -978,7 +955,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/talk/user2012/&amp;title=Example%20Talk" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/talk/user2012/&amp;title=Smooth%20Bootstrap%20Inference%20for%20Parametric%20Quantile%20Regression" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -991,7 +968,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Example%20Talk%20/talk/user2012/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Smooth%20Bootstrap%20Inference%20for%20Parametric%20Quantile%20Regression%20/talk/user2012/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1004,7 +981,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/talk/user2012/&amp;title=Example%20Talk" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/talk/user2012/&amp;title=Smooth%20Bootstrap%20Inference%20for%20Parametric%20Quantile%20Regression" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1157,7 +1134,7 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/talk/example/">Example Talk</a></li>
+      <li><a href="/talk/fordham/">Construction of the Reference Growth Charts for Saudi Arabian Children and Adolescents</a></li>
       
     </ul>
   </div>
