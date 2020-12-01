@@ -26,12 +26,12 @@ math: true
 #projects:
 #- internal-project
 publishDate: "2018-05-16"
-slides: eRumTalk/eRumTK.html
+slides: https://tanjakec.github.io/eRumTalk/eRumTK.html#1
 #summary: An example talk using Academic's Markdown slides feature.
 tags: [rstats, cloud, RStudio, AWS]
 title: Data Landscapes$\colon$ a pragmatic and philosophical visualisation of the sustainable urban landscape
 url_code: ""
-url_pdf: "eRumTalk/eRumTK.html"
+url_pdf: "https://tanjakec.github.io/eRumTalk/eRumTK.html#1"
 #url_slides: "UseR_2012.pdf"
 url_video: ""
 ---

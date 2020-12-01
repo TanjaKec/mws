@@ -26,12 +26,12 @@ math: true
 #projects:
 #- internal-project
 publishDate: "2020-06-18"
-slides: eRum_Talk/index.html
+slides: https://rtoolboxerum.netlify.app/#1
 #summary: An example talk using Academic's Markdown slides feature.
-tags: [rstats, cloud, RStudio, AWS]
+tags: [rstats, data journalism]
 title: Transparent Journalism Through the Power of R
 url_code: ""
-url_pdf: "eRum_Talk/index.html"
+url_pdf: "https://rtoolboxerum.netlify.app/"
 url_slides: "https://rtoolboxerum.netlify.app"
 url_video: "https://www.youtube.com/watch?v=r70YV-4ktIY&feature=youtu.be"
 ---
