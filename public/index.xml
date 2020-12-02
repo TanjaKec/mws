@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>tanja&#39;s website</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/TK.jpg</url>
       <title>tanja&#39;s website</title>
@@ -93,6 +93,170 @@
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
 &lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thematic Maps</title>
+      <link>/post/cins_map/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/cins_map/</guid>
+      <description>
+
+
+&lt;p&gt;Thematic maps are geographical maps in which spatial data distributions are visualised. Earlier this year I contributed to the &lt;a href=&#34;https://www.cins.rs/en/&#34;&gt;CINS’&lt;/a&gt; article about &lt;a href=&#34;https://www.cins.rs/sns-sps-i-ds-za-sedam-godina-gradjani-strankama-donirali-oko-15-milijardi-dinara/&#34;&gt;donations to local political parties for the period between 2012-2018&lt;/a&gt;. We created an interactive thematic map, choropleth, shading the development group of the town and adding two more layers of information, i.e. attributes: the total amount of money donated (size and the colour of the bubble) and the amount of money received by each of the political party (popup menu)&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;
+&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;
+🔎Pogledajte odakle dolaze donatori &lt;a href=&#34;https://twitter.com/sns_srbija?ref_src=twsrc%5Etfw&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@sns_srbija&lt;/span&gt;&lt;/a&gt; &lt;a href=&#34;https://twitter.com/socijalisti?ref_src=twsrc%5Etfw&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@socijalisti&lt;/span&gt;&lt;/a&gt; i &lt;a href=&#34;https://twitter.com/demokrate?ref_src=twsrc%5Etfw&#34;&gt;&lt;span class=&#34;citation&#34;&gt;@demokrate&lt;/span&gt;&lt;/a&gt; i ko je prikupio najviše para od donacija u periodu od sedam godina 💸👇&lt;a href=&#34;https://t.co/2HHXrSLSLC&#34;&gt;https://t.co/2HHXrSLSLC&lt;/a&gt;
+&lt;/p&gt;
+— CINS (&lt;span class=&#34;citation&#34;&gt;@CINSerbia&lt;/span&gt;) &lt;a href=&#34;https://twitter.com/CINSerbia/status/1264812939401400320?ref_src=twsrc%5Etfw&#34;&gt;May 25, 2020&lt;/a&gt;
+&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;To create an interactive map like this in R you will need the &lt;a href=&#34;https://cran.r-project.org/web/packages/tmap/tmap.pdf&#34;&gt;&lt;code&gt;tmap&lt;/code&gt;&lt;/a&gt; package. In order to provide the workflow to create thematic maps additionally you need a set of tools for reading and processing spatial data available through the &lt;a href=&#34;https://cran.r-project.org/web/packages/tmaptools/index.html&#34;&gt;&lt;code&gt;tmaptools&lt;/code&gt;&lt;/a&gt;. I will illustrate how easy it is to create a thematic map using the &lt;code&gt;tmap&lt;/code&gt; package, but you can learn more about this package from the &lt;a href=&#34;https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html&#34;&gt;tmap: get started!&lt;/a&gt; website.&lt;/p&gt;
+&lt;p&gt;R has impressive geographic capabilities and can handle different kinds of spatial data file formats including geojson and KML. In this example we will make a use of the ESRI Shapefile format, which stores non-topological geometry and attribute information for the spatial features in a data set. A shapefile consists minimally of a main file, an index file, and a dBASE table.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;.shp - lists shape and vertices&lt;/li&gt;
+&lt;li&gt;.shx - has index with offsets&lt;/li&gt;
+&lt;li&gt;.dbf - relationship file between geometry and attributes (data)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To import an ESRI shapefile into R correctly, all three files must be present in the directory and named the same (except for the file extension).&lt;/p&gt;
+&lt;p&gt;To reproduce this example you will need to download spatial files and data that is visualised on the map. You can download this data bundle from &lt;a href=&#34;https://github.com/TanjaKec/tm_bundle/archive/main.zip&#34;&gt;here&lt;/a&gt;. These shape files with Serbian districts’ boundaries are obtained from &lt;a href=&#34;https://gadm.org/download_country_v3.html&#34;&gt;GADM maps and data&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We will start by uploading the required packages and read simple features from our spatial files as indicated in the code below.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## If you don&amp;#39;t have ggplot2, dplyr, sf, sp, tm, tmaptools installed yet, uncomment and run the line below
+#install.packages(&amp;quot;ggplot2&amp;quot;, &amp;quot;dplyr&amp;quot;, &amp;quot;sf&amp;quot;, &amp;quot;sp&amp;quot;, &amp;quot;readxl&amp;quot;, tm&amp;quot;, &amp;quot;tmaptools&amp;quot;)
+library(ggplot2)
+library(dplyr)
+library(sf)
+library(sp)
+library(readxl)
+library(tmap)
+library(tmaptools)
+
+#pointed to the shape file
+serbia_location1 &amp;lt;- &amp;quot;spatial/gadm36_SRB_1.shp&amp;quot;
+
+#used the st_read() function to import it
+serbia_districts1 &amp;lt;- st_read(serbia_location1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The visualisation needs to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;indicate the development group for each of the Serbian municipality&lt;/li&gt;
+&lt;li&gt;display donations to local political parties for the period between 2012-2018 for each of the municipality&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Belgrade city has several municipalities, but donations to local political parties for the period between 2012-2018 is given for the whole of Belgrade. This requires to pull out the boundary for whole of the Belgrade district and to combaine it with the boundaries for the rest of Serbian municipalities.&lt;/p&gt;
+&lt;p&gt;In order to filter the necessary geometry for Belgrade district and to combine it with the sf data for Serbian municipalities we will use &lt;a href=&#34;https://r-spatial.github.io/sf/reference/tidyverse.html&#34;&gt;&lt;code&gt;tidyverse&lt;/code&gt; methods for sf objects&lt;/a&gt;. Another issue we need to address is that data also contains information about Kosovo which needs to be included on the map. We will read shape files for Serbian and Kosovo municipalities and combine it into one.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# filter out geometry of Belgrade&amp;#39;s district
+serbia_districts1 &amp;lt;- serbia_districts1 %&amp;gt;% 
+  filter(as.character(VARNAME_1) == &amp;quot;Belgrade&amp;quot;)
+
+
+# pointed to the shape files for municipalities (Serbia and Kosovo)
+serbia_location &amp;lt;- &amp;quot;gadm36_SRB_2.shp&amp;quot;
+kosovo_location &amp;lt;- &amp;quot;gadm36_XKO_2.shp&amp;quot;
+#used the st_read() function to import them
+serbia_districts &amp;lt;- st_read(serbia_location)
+kosovo_districts &amp;lt;- st_read(kosovo_location)
+
+# replace geometries of Belgrade&amp;#39;s municipalities with Belgrade district 
+BG &amp;lt;- serbia_districts %&amp;gt;%
+  filter(NAME_2 == &amp;quot;Stari Grad&amp;quot;)
+BG$NAME_2 &amp;lt;- &amp;quot;Beograd&amp;quot;
+BG$NL_NAME_2 &amp;lt;- BG$NL_NAME_1
+BG$geometry &amp;lt;- serbia_districts1$geometry
+
+serbia_districts_BG &amp;lt;- serbia_districts %&amp;gt;% 
+  filter(NAME_1 != &amp;quot;Grad Beograd&amp;quot;)
+
+serbia_districts_BG1 &amp;lt;- rbind(BG, serbia_districts_BG)
+
+# combine sf data of serbia and Kosovo 
+sr &amp;lt;- rbind(serbia_districts_BG1, kosovo_districts)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the next step we read data to be maped given in the Excel file and make sure that the names of the municipalities correspond to the names in the &lt;code&gt;sf&lt;/code&gt; file old fashion way 😁.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# read excel file
+razvijenost &amp;lt;- read_excel(&amp;quot;razvijenost.xlsx&amp;quot;, sheet = 1)
+
+ki &amp;lt;- serbia_districts$NL_NAME_2[serbia_districts$NAME_2 == &amp;quot;Kikinda&amp;quot;]
+gm &amp;lt;- serbia_districts$NL_NAME_2[serbia_districts$NAME_2 == &amp;quot;Gornji Milanovac&amp;quot;]
+ar &amp;lt;- serbia_districts$NL_NAME_2[serbia_districts$NAME_2 == &amp;quot;Arilje&amp;quot;]
+pe &amp;lt;- serbia_districts$NL_NAME_2[serbia_districts$NAME_2 == &amp;quot;Petrovac&amp;quot;]
+dm &amp;lt;- serbia_districts$NL_NAME_2[serbia_districts$NAME_2 == &amp;quot;Dimitrovgrad&amp;quot;]
+# ----
+pr &amp;lt;- kosovo_districts$NL_NAME_2[kosovo_districts$NAME_2 == &amp;quot;Priština&amp;quot;]
+ur &amp;lt;- kosovo_districts$NL_NAME_2[kosovo_districts$NAME_2 == &amp;quot;Uroševac&amp;quot;]
+
+razvijenost$Town[razvijenost$Town == &amp;quot;Кикинда&amp;quot;] &amp;lt;- ki
+razvijenost$Town[razvijenost$Town ==&amp;quot;Горњи Милановац&amp;quot;] &amp;lt;- gm 
+razvijenost$Town[razvijenost$Town ==&amp;quot;Ариље&amp;quot;] &amp;lt;- ar 
+razvijenost$Town[razvijenost$Town ==&amp;quot;Петровац на Млави&amp;quot;] &amp;lt;- pe 
+razvijenost$Town[razvijenost$Town ==&amp;quot;Димитровград&amp;quot;] &amp;lt;- dm 
+# ----
+razvijenost$Town[razvijenost$Town ==&amp;quot;Приштина&amp;quot;] &amp;lt;- pr
+razvijenost$Town[razvijenost$Town ==&amp;quot;Урошевац&amp;quot;] &amp;lt;- ur
+
+# merge data: sf and excel 
+my_map &amp;lt;- left_join(sr, razvijenost,
+                    by=c(&amp;quot;NL_NAME_2&amp;quot; = &amp;quot;Town&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once data is organised it can be mapped using &lt;code&gt;tmap&lt;/code&gt;. To make it aesthetically more appealing we will rescale the values for total donation so that the bubbles that are going to be used in its visualisation are not too small nor too big. Another matter that needs to be address is that polygon of Negotin’s municipality has an extra border that needs to be remove before we can map data.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# ====================
+# ----- Mapping ------
+
+library(tmap)
+library(tmaptools)
+
+# scaling `donation`
+my_map &amp;lt;- my_map %&amp;gt;% 
+  mutate(ln_donation = log(donation)^6)
+
+# Pull out the geometry for Negotin
+bad_geo  = 
+  my_map %&amp;gt;%
+  filter(NAME_2 == &amp;quot;Negotin&amp;quot;) %&amp;gt;%
+  pull(geometry)
+# Keep only the first of the two polygon borders
+good_geo = bad_geo[[1]][1]
+# Replace old geometry with fixed
+my_map$geometry[which(my_map$NAME_2 == &amp;quot;Negotin&amp;quot;)] &amp;lt;- st_multipolygon(good_geo)
+
+# set tmap mode to interactive viewing
+tmap_mode(mode =  &amp;quot;view&amp;quot;)
+
+# shade municipalities according to the group development and superimpose bubble which size and colour shade correspond to the total level of donation. Enable pop-up information about individual party donations (show it using Latin alphabet rather than Cyrillic).
+tm_shape(my_map) +
+  tm_polygons(&amp;quot;development_group&amp;quot;, 
+              id = &amp;quot;NAME_2&amp;quot;, 
+              palette = &amp;quot;YlGn&amp;quot;, 
+              title = &amp;quot;Grupa razvijenosti&amp;quot;,
+              textNA = &amp;quot;nema podataka&amp;quot;,
+              popup.vars=c(&amp;quot;DS&amp;quot;=&amp;quot;ДС&amp;quot;, 
+                           &amp;quot;SNS&amp;quot;=&amp;quot;СНС&amp;quot;,  
+                           &amp;quot;SPS&amp;quot;=&amp;quot;СПС&amp;quot;,
+                           &amp;quot;Ukupno (RSD)&amp;quot; = &amp;quot;donation&amp;quot;)) +
+  tm_bubbles(size = &amp;quot;ln_donation&amp;quot;, 
+             col = &amp;quot;donation&amp;quot;, 
+             border.col = &amp;quot;black&amp;quot;, 
+             border.alpha = 1, 
+             style = &amp;quot;fixed&amp;quot;, 
+             breaks=c(0 , 1000000, 10000000, 50000000, 100000000, 200000000, 500000000),
+             palette = &amp;quot;PuRd&amp;quot;, 
+             contrast = 1, 
+             title.col = &amp;quot;Ukupno donirano u RSD&amp;quot;,
+             id = &amp;quot;NAME_2&amp;quot;,
+             popup.vars=c(&amp;quot;DS&amp;quot;=&amp;quot;ДС&amp;quot;, 
+                          &amp;quot;SNS&amp;quot;=&amp;quot;СНС&amp;quot;,  
+                          &amp;quot;SPS&amp;quot;=&amp;quot;СПС&amp;quot;,
+                          &amp;quot;Ukupno (RSD)&amp;quot; = &amp;quot;donation&amp;quot;)) +
+  tm_layout(legend.title.size = .5, legend.text.size = .65,
+            legend.frame = TRUE,
+            legend.format = list(fun = function(x) { 
+              formatC(x, digits = 0, big.mark = &amp;quot;,&amp;quot;, format = &amp;quot;f&amp;quot;)
+            })) +
+  tm_layout(title = &amp;quot;Prilozi građana za period 2012-2018&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;izvor podataka: &amp;lt;a href=&amp;#39;http://www.acas.rs/&amp;#39;&amp;gt;ACAS&amp;lt;/a&amp;gt; i &amp;lt;a href=&amp;#39;ras.gov.rs&amp;#39;&amp;gt;RAS&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;© &amp;lt;a href=&amp;#39;https://www.cins.rs/&amp;#39;&amp;gt;CINS&amp;lt;/a&amp;gt;, maj 2020&amp;quot;,
+            frame = FALSE,
+            inner.margins = c(0.1, 0.1, 0.05, 0.05)) &lt;/code&gt;&lt;/pre&gt;
+&lt;iframe seamless src=&#34;prilozi_gradjana_links.html&#34; width=&#34;100%&#34; height=&#34;500&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;This is information rich visualisation. It incorporates an interactive thematic map, choropleth, shading the development group of the town and adding two more layers of information, i.e. attributes: the total amount of money donated (size and the colour of the bubble) and the amount of money received by each of the political party (popup menu).&lt;/p&gt;
+&lt;p&gt;Incorporating interactive visualisation with clearly presented facts, helped to empower readers by informing them in an effective manner.&lt;/p&gt;
+&lt;p&gt;This was an excellent example of effective data journalism, employed as a direct result of &lt;a href=&#34;https://www.cins.rs/en/&#34;&gt;CINS&lt;/a&gt; embracing the capacity of the &lt;a href=&#34;https://rtoolbox.rbind.io/&#34;&gt;RToolbox&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -189,7 +353,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-981352674&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-652984173&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -199,7 +363,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-981352674&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-652984173&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
