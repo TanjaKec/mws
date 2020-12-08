@@ -1184,6 +1184,340 @@ Three
     </item>
     
     <item>
+      <title>Why R? An illustration through the use of ggplot and magick</title>
+      <link>/post/why_r/</link>
+      <pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/post/why_r/</guid>
+      <description>
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The &lt;strong&gt;R&lt;/strong&gt; language provides a rich and flexible environment for working with data, especially data to be used for statistical modelling or graphics.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;R&lt;/strong&gt; is a comprehensive public domain language for data analysis, with no licensing costs associated with it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Being independent of any platform, &lt;strong&gt;R&lt;/strong&gt; is universally applicable and simple to integrate into existing IT structures.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can download &lt;strong&gt;R&lt;/strong&gt; for free from:&lt;br /&gt;
+&lt;a href=&#34;https://cran.r-project.org/&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;and &lt;a href=&#34;https://www.rstudio.com/&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;, a free and open-source integrated development environment (IDE) for &lt;strong&gt;R&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.rstudio.com/&#34; class=&#34;uri&#34;&gt;https://www.rstudio.com/&lt;/a&gt;&lt;/p&gt;
+&lt;div id=&#34;data-science&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Data Science&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The new vast amount of data we have begun to take more and more notice of, has given a rise to the new discipline of data science.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Growing demand of data volume and easy understandability of extracted knowledge and insights from data is the motivating force of data science.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;With the explosion of “Big Data” problems, data science has become a very hot field in many scientific areas as well as marketing, finance, and other business and social study disciplines. Hence, there is a growing demand for business and social scientific researchers with statistical, modelling and computing skills.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;We can now identify patterns and regularities in data of all sorts that allow us to advance scholarship, improve the human condition, and create commercial and social value.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The field of data science is emerging at the intersection of the fields of statistics, computer science and design. &lt;strong&gt;R&lt;/strong&gt; provides grate platform for this multidisciplinarity. It is incredibly powerful and as such it should be the first language for data manipulation, data analysis and visualisation you’re looking to grow skills in if you want to move towards data science.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;why-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Why R?&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;&lt;p&gt;The &lt;strong&gt;R&lt;/strong&gt; system has an extensive library of packages that offer state-of-the-art-abilities.&lt;br /&gt;
+Many of the analyses that they offer are not even available in any of the standard packages.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The functionalities of:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;data manipulation,&lt;/li&gt;
+&lt;li&gt;data analysis and&lt;/li&gt;
+&lt;li&gt;visualisation implemented in &lt;strong&gt;R&lt;/strong&gt; are incomparable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: lower-alpha&#34;&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;R&lt;/strong&gt; enables you to escape from the restrictive environments and sterile analyses offered by commonly used statistical software packages.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;R&lt;/strong&gt; enables easy experimentation and exploration, which improves data analysis.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;R&lt;/strong&gt; is a tool behind reporting modern data analyses in a reproducible manner making an analysis more useful to others because the data and code that actually conducted the analysis can be made available.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-community&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;R Community&lt;/h2&gt;
+&lt;p&gt;“The &lt;strong&gt;R&lt;/strong&gt; community is one of &lt;strong&gt;R&lt;/strong&gt;’s best features!”
+&lt;a href=&#34;http://blog.revolutionanalytics.com/&#34;&gt;Revolutions&lt;/a&gt; Daily news about using open source &lt;strong&gt;R&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Supported by the &lt;strong&gt;R Foundation for Statistical Computing&lt;/strong&gt; and with the strong and open engagement of developers and users from all walks of background from science to commerce it is hard to envisage that any commercial corporation will be able to develop sustainable business model with the same innovative drive and power as &lt;strong&gt;R community&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The collaboration amongst statisticians and other scientist who are engaged with statistical computing and growing interest and engagement of large companies creates altruistic &lt;strong&gt;R community&lt;/strong&gt; which generates the force within which &lt;strong&gt;R&lt;/strong&gt; is conquering the field of data analytics. As a result it creates a more powerful &lt;strong&gt;R&lt;/strong&gt; resource and becomes more usable and attractive to Data scientists and analysists.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;list-of-resources&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;List of resources&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://ropensci.org/&#34;&gt;ROpenSci&lt;/a&gt;: “&lt;strong&gt;R&lt;/strong&gt; community is not just for ‘power users’ or developers. It’s a place for users and people interested in learning more about &lt;strong&gt;R&lt;/strong&gt;”;
+Provides list of useful links:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/search?q=%23rstats&#34;&gt;#rstats hashtag&lt;/a&gt; — a responsive, welcoming, and inclusive community of &lt;strong&gt;R&lt;/strong&gt; users to interact with on Twitter&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rladies.org/&#34;&gt;R-Ladies&lt;/a&gt; — a world-wide organization focused on promoting gender diversity within the &lt;strong&gt;R&lt;/strong&gt; community, with more than 30 local chapters&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://jumpingrivers.github.io/meetingsR/r-user-groups.html&#34;&gt;Local R meetup groups&lt;/a&gt; — a google search may show that there’s one in your area! If not, maybe consider starting one! Face-to-face meet-ups for users of all levels are incredibly valuable&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rweekly.org/&#34;&gt;Rweekly&lt;/a&gt; — an incredible weekly recap of all things &lt;strong&gt;R&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.r-bloggers.com/&#34;&gt;R-bloggers&lt;/a&gt; — an awesome resource to find posts from many different bloggers using &lt;strong&gt;R&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.datacarpentry.org/&#34;&gt;DataCarpentry&lt;/a&gt; and &lt;a href=&#34;https://software-carpentry.org/&#34;&gt;Software Carpentry&lt;/a&gt; — a resource of openly available lessons that promote and model reproducible research&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/&#34;&gt;Stack Overflow&lt;/a&gt; — chances are your R question has already been answered here (with additional resources for people looking for jobs)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;who-uses-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Who uses R?&lt;/h2&gt;
+&lt;p&gt;Some of the major domains using &lt;strong&gt;R&lt;/strong&gt; include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financial Services,&lt;/li&gt;
+&lt;li&gt;Pharmaceuticals,&lt;/li&gt;
+&lt;li&gt;Telecom,&lt;/li&gt;
+&lt;li&gt;Life Sciences and&lt;/li&gt;
+&lt;li&gt;Education sector.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Top companies using &lt;strong&gt;R&lt;/strong&gt; are :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.google.me&#34;&gt;Google&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/&#34;&gt;LinkedIn&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.facebook.com/&#34;&gt;Facebook&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;http://johnburnmurdoch.github.io/&#34;&gt;Financial Times&lt;/a&gt;: Quantitative Journalism,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com&#34;&gt;Amazon&lt;/a&gt; and many more…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-do-we-do-it&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;How do we do it?&lt;/h2&gt;
+&lt;p&gt;Tools needed in a typical data science project:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Program_HW.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;R for Data Science&lt;/strong&gt;
+by Garrett Grolemund &amp;amp; Hadley Wickham&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://r4ds.had.co.nz/index.html&#34; class=&#34;uri&#34;&gt;http://r4ds.had.co.nz/index.html&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;real-example&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Real Example&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.declawing-project.org/&#34;&gt;Does declawing (onychectomy) cause harm to cats?&lt;/a&gt; Analyzing 17 years’ worth of shelter admissions data.
+- The dataset captures specifics about the individual cat (declawed status, age, breed, coat color, etc.) as well as the primary reason for admission. Some of the admission reasons are unconnected to the animal (e.g., moving, can’t afford pet, allergies) — but some reasons are based on problematic behaviors exhibited by the cat (e.g., house-soiling, aggressive to other animals, aggressive to people). Available to us is a CSV file containing 200 sample records.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;DataCSV.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Cat_Data&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;do-it-in-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Do it in R&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Install and load packages and data 
+# The tidyverse is a collection of R packages designed for data science
+# Install the complete tidyverse with
+# install.packages(&amp;quot;tidyverse&amp;quot;)
+# load the complete tidyverse with
+library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Attaching packages ──────────────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ✓ ggplot2 3.3.1     ✓ purrr   0.3.4
+## ✓ tibble  3.0.1     ✓ dplyr   1.0.2
+## ✓ tidyr   1.1.0     ✓ stringr 1.4.0
+## ✓ readr   1.3.1     ✓ forcats 0.5.0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Conflicts ─────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Install and load the ggplot2 package: grammer of graphics
+# Install and load the magick package fo advanced image-processing in R
+# install.packages(&amp;quot;magick&amp;quot;)
+library(magick)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Linking to ImageMagick 6.9.11.32
+## Enabled features: cairo, fontconfig, freetype, lcms, pango, rsvg, webp
+## Disabled features: fftw, ghostscript, x11&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# load the data saved on your computer
+# cat_claw &amp;lt;- read.csv(&amp;quot;declawing_data_sample.csv&amp;quot;)
+# or load the data directly from the website
+cat_claw &amp;lt;- read.csv(&amp;quot;declawing_data_sample.csv&amp;quot;)
+# Have a look at the data: head()
+# let us look at first three raws of the data
+head(cat_claw, n = 3)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Animal.ID Animal.Name Species Gender Date.Of.Birth      Primary.Breed
+## 1   1032415      HARLEY     Cat      M     9/18/1999 Domestic Shorthair
+## 2   1032962     TRUCKER     Cat      M     4/10/1998 Domestic Shorthair
+## 3   1033799                 Cat      M      2/2/2000  Domestic Longhair
+##   Secondary.Breed Declawed Distinguishing.Markings Purebred BodyWeight
+## 1             Mix     None                                0          0
+## 2             Mix     None                                0          0
+## 3             Mix     None                                0          2
+##   BodyWeightUnit PrimaryColor SecondaryColor ColorPattern         Intake.Date
+## 1           &amp;lt;NA&amp;gt;        Black          White         &amp;lt;NA&amp;gt; 03/18/2000 00:14:00
+## 2           &amp;lt;NA&amp;gt;         Grey           &amp;lt;NA&amp;gt;        Tiger 04/06/2000 00:45:00
+## 3          pound        Black           &amp;lt;NA&amp;gt;         &amp;lt;NA&amp;gt; 05/02/2000 00:37:00
+##                Intake.Type Intake.Subtype        Reason Reason.Category
+## 1 Owner/Guardian Surrender       Schedule                          &amp;lt;NA&amp;gt;
+## 2                    Stray        Walk In                          &amp;lt;NA&amp;gt;
+## 3 Owner/Guardian Surrender        Walk In Too Many Pets   Owner problem&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Have alook at the structure of the data: str()
+# look at the structure of the data
+str(cat_claw)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## &amp;#39;data.frame&amp;#39;:    200 obs. of  20 variables:
+##  $ Animal.ID              : int  1032415 1032962 1033799 1033965 1038328 1048494 1052572 1053299 1054811 1057979 ...
+##  $ Animal.Name            : chr  &amp;quot;HARLEY&amp;quot; &amp;quot;TRUCKER&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; ...
+##  $ Species                : chr  &amp;quot;Cat&amp;quot; &amp;quot;Cat&amp;quot; &amp;quot;Cat&amp;quot; &amp;quot;Cat&amp;quot; ...
+##  $ Gender                 : chr  &amp;quot;M&amp;quot; &amp;quot;M&amp;quot; &amp;quot;M&amp;quot; &amp;quot;M&amp;quot; ...
+##  $ Date.Of.Birth          : chr  &amp;quot;9/18/1999&amp;quot; &amp;quot;4/10/1998&amp;quot; &amp;quot;2/2/2000&amp;quot; &amp;quot;3/7/2000&amp;quot; ...
+##  $ Primary.Breed          : chr  &amp;quot;Domestic Shorthair&amp;quot; &amp;quot;Domestic Shorthair&amp;quot; &amp;quot;Domestic Longhair&amp;quot; &amp;quot;Domestic Longhair&amp;quot; ...
+##  $ Secondary.Breed        : chr  &amp;quot;Mix&amp;quot; &amp;quot;Mix&amp;quot; &amp;quot;Mix&amp;quot; &amp;quot;Mix&amp;quot; ...
+##  $ Declawed               : chr  &amp;quot;None&amp;quot; &amp;quot;None&amp;quot; &amp;quot;None&amp;quot; &amp;quot;None&amp;quot; ...
+##  $ Distinguishing.Markings: chr  &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;&amp;quot; ...
+##  $ Purebred               : int  0 0 0 0 0 0 0 0 0 0 ...
+##  $ BodyWeight             : num  0 0 2 0 0 0 0 12 0 0 ...
+##  $ BodyWeightUnit         : chr  NA NA &amp;quot;pound&amp;quot; NA ...
+##  $ PrimaryColor           : chr  &amp;quot;Black&amp;quot; &amp;quot;Grey&amp;quot; &amp;quot;Black&amp;quot; &amp;quot;Orange&amp;quot; ...
+##  $ SecondaryColor         : chr  &amp;quot;White&amp;quot; NA NA &amp;quot;White&amp;quot; ...
+##  $ ColorPattern           : chr  NA &amp;quot;Tiger&amp;quot; NA NA ...
+##  $ Intake.Date            : chr  &amp;quot;03/18/2000 00:14:00&amp;quot; &amp;quot;04/06/2000 00:45:00&amp;quot; &amp;quot;05/02/2000 00:37:00&amp;quot; &amp;quot;05/07/2000 00:26:00&amp;quot; ...
+##  $ Intake.Type            : chr  &amp;quot;Owner/Guardian Surrender&amp;quot; &amp;quot;Stray&amp;quot; &amp;quot;Owner/Guardian Surrender&amp;quot; &amp;quot;Owner/Guardian Surrender&amp;quot; ...
+##  $ Intake.Subtype         : chr  &amp;quot;Schedule&amp;quot; &amp;quot;Walk In&amp;quot; &amp;quot;Walk In&amp;quot; &amp;quot;Walk In&amp;quot; ...
+##  $ Reason                 : chr  &amp;quot;&amp;quot; &amp;quot;&amp;quot; &amp;quot;Too Many Pets&amp;quot; &amp;quot;Too Many Pets&amp;quot; ...
+##  $ Reason.Category        : chr  NA NA &amp;quot;Owner problem&amp;quot; &amp;quot;Owner problem&amp;quot; ...&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Do it in a tidy way: glimpse()
+# previous output was messy as it didn&amp;#39;t fit on the slide.
+# we want tolook at the structure of the data as much data 
+# as possible and identify data types for each of the variables
+glimpse(cat_claw)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Rows: 200
+## Columns: 20
+## $ Animal.ID               &amp;lt;int&amp;gt; 1032415, 1032962, 1033799, 1033965, 1038328, …
+## $ Animal.Name             &amp;lt;chr&amp;gt; &amp;quot;HARLEY&amp;quot;, &amp;quot;TRUCKER&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;PUDDY TAT&amp;quot;,…
+## $ Species                 &amp;lt;chr&amp;gt; &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Ca…
+## $ Gender                  &amp;lt;chr&amp;gt; &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;F&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;F&amp;quot;, …
+## $ Date.Of.Birth           &amp;lt;chr&amp;gt; &amp;quot;9/18/1999&amp;quot;, &amp;quot;4/10/1998&amp;quot;, &amp;quot;2/2/2000&amp;quot;, &amp;quot;3/7/20…
+## $ Primary.Breed           &amp;lt;chr&amp;gt; &amp;quot;Domestic Shorthair&amp;quot;, &amp;quot;Domestic Shorthair&amp;quot;, &amp;quot;…
+## $ Secondary.Breed         &amp;lt;chr&amp;gt; &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mi…
+## $ Declawed                &amp;lt;chr&amp;gt; &amp;quot;None&amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;Fron…
+## $ Distinguishing.Markings &amp;lt;chr&amp;gt; &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;…
+## $ Purebred                &amp;lt;int&amp;gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+## $ BodyWeight              &amp;lt;dbl&amp;gt; 0.00, 0.00, 2.00, 0.00, 0.00, 0.00, 0.00, 12.…
+## $ BodyWeightUnit          &amp;lt;chr&amp;gt; NA, NA, &amp;quot;pound&amp;quot;, NA, NA, NA, NA, &amp;quot;pound&amp;quot;, NA,…
+## $ PrimaryColor            &amp;lt;chr&amp;gt; &amp;quot;Black&amp;quot;, &amp;quot;Grey&amp;quot;, &amp;quot;Black&amp;quot;, &amp;quot;Orange&amp;quot;, &amp;quot;Black&amp;quot;, …
+## $ SecondaryColor          &amp;lt;chr&amp;gt; &amp;quot;White&amp;quot;, NA, NA, &amp;quot;White&amp;quot;, &amp;quot;White&amp;quot;, &amp;quot;Brown&amp;quot;, N…
+## $ ColorPattern            &amp;lt;chr&amp;gt; NA, &amp;quot;Tiger&amp;quot;, NA, NA, NA, &amp;quot;Tiger&amp;quot;, &amp;quot;Tortoisesh…
+## $ Intake.Date             &amp;lt;chr&amp;gt; &amp;quot;03/18/2000 00:14:00&amp;quot;, &amp;quot;04/06/2000 00:45:00&amp;quot;,…
+## $ Intake.Type             &amp;lt;chr&amp;gt; &amp;quot;Owner/Guardian Surrender&amp;quot;, &amp;quot;Stray&amp;quot;, &amp;quot;Owner/G…
+## $ Intake.Subtype          &amp;lt;chr&amp;gt; &amp;quot;Schedule&amp;quot;, &amp;quot;Walk In&amp;quot;, &amp;quot;Walk In&amp;quot;, &amp;quot;Walk In&amp;quot;, …
+## $ Reason                  &amp;lt;chr&amp;gt; &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;Too Many Pets&amp;quot;, &amp;quot;Too Many Pets&amp;quot;, &amp;quot;&amp;quot;,…
+## $ Reason.Category         &amp;lt;chr&amp;gt; NA, NA, &amp;quot;Owner problem&amp;quot;, &amp;quot;Owner problem&amp;quot;, NA,…&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;what-to-focus-on&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What to focus on?&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Note that variable &amp;#39;Declawed&amp;#39; is the main variable of interest
+# with three possible outcomes
+summary(cat_claw$Declawed)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    Length     Class      Mode 
+##       200 character character&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# sort the dates (DOB and InatekD) to be in the same format
+cat_claw$Date.Of.Birth &amp;lt;- as.Date(cat_claw$Date.Of.Birth, format=&amp;#39;%m/%d/%Y&amp;#39;)
+cat_claw$Intake.Date &amp;lt;- as.Date(cat_claw$Intake.Date, format=&amp;#39;%m/%d/%Y&amp;#39;)
+# How does it look?
+# check the data
+glimpse(cat_claw)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Rows: 200
+## Columns: 20
+## $ Animal.ID               &amp;lt;int&amp;gt; 1032415, 1032962, 1033799, 1033965, 1038328, …
+## $ Animal.Name             &amp;lt;chr&amp;gt; &amp;quot;HARLEY&amp;quot;, &amp;quot;TRUCKER&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;PUDDY TAT&amp;quot;,…
+## $ Species                 &amp;lt;chr&amp;gt; &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Ca…
+## $ Gender                  &amp;lt;chr&amp;gt; &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;F&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;F&amp;quot;, …
+## $ Date.Of.Birth           &amp;lt;date&amp;gt; 1999-09-18, 1998-04-10, 2000-02-02, 2000-03-…
+## $ Primary.Breed           &amp;lt;chr&amp;gt; &amp;quot;Domestic Shorthair&amp;quot;, &amp;quot;Domestic Shorthair&amp;quot;, &amp;quot;…
+## $ Secondary.Breed         &amp;lt;chr&amp;gt; &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mi…
+## $ Declawed                &amp;lt;chr&amp;gt; &amp;quot;None&amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;Fron…
+## $ Distinguishing.Markings &amp;lt;chr&amp;gt; &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;…
+## $ Purebred                &amp;lt;int&amp;gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+## $ BodyWeight              &amp;lt;dbl&amp;gt; 0.00, 0.00, 2.00, 0.00, 0.00, 0.00, 0.00, 12.…
+## $ BodyWeightUnit          &amp;lt;chr&amp;gt; NA, NA, &amp;quot;pound&amp;quot;, NA, NA, NA, NA, &amp;quot;pound&amp;quot;, NA,…
+## $ PrimaryColor            &amp;lt;chr&amp;gt; &amp;quot;Black&amp;quot;, &amp;quot;Grey&amp;quot;, &amp;quot;Black&amp;quot;, &amp;quot;Orange&amp;quot;, &amp;quot;Black&amp;quot;, …
+## $ SecondaryColor          &amp;lt;chr&amp;gt; &amp;quot;White&amp;quot;, NA, NA, &amp;quot;White&amp;quot;, &amp;quot;White&amp;quot;, &amp;quot;Brown&amp;quot;, N…
+## $ ColorPattern            &amp;lt;chr&amp;gt; NA, &amp;quot;Tiger&amp;quot;, NA, NA, NA, &amp;quot;Tiger&amp;quot;, &amp;quot;Tortoisesh…
+## $ Intake.Date             &amp;lt;date&amp;gt; 2000-03-18, 2000-04-06, 2000-05-02, 2000-05-…
+## $ Intake.Type             &amp;lt;chr&amp;gt; &amp;quot;Owner/Guardian Surrender&amp;quot;, &amp;quot;Stray&amp;quot;, &amp;quot;Owner/G…
+## $ Intake.Subtype          &amp;lt;chr&amp;gt; &amp;quot;Schedule&amp;quot;, &amp;quot;Walk In&amp;quot;, &amp;quot;Walk In&amp;quot;, &amp;quot;Walk In&amp;quot;, …
+## $ Reason                  &amp;lt;chr&amp;gt; &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, &amp;quot;Too Many Pets&amp;quot;, &amp;quot;Too Many Pets&amp;quot;, &amp;quot;&amp;quot;,…
+## $ Reason.Category         &amp;lt;chr&amp;gt; NA, NA, &amp;quot;Owner problem&amp;quot;, &amp;quot;Owner problem&amp;quot;, NA,…&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-old-are-the-cats&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;How old are the cats?&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# calculate age in days
+cat_claw$diff_in_days &amp;lt;- cat_claw$Intake.Date - cat_claw$Date.Of.Birth
+summary(cat_claw$diff_in_days) # summary for class type: &amp;#39;difftime&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Length    Class     Mode 
+##      200 difftime  numeric&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# summary for diff_in_days as numeric (does everything seem ok?)
+summary(as.numeric(cat_claw$diff_in_days))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    -322     122     730    1070    1822    5114&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Identify &amp;#39;incorrect&amp;#39; observation(s)
+# identify negative diff_in_days; how many?
+ind &amp;lt;- which.min(as.numeric(cat_claw$diff_in_days))
+ind&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 30&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# remove observations with intake date before date of bearth
+# save it as a new data set
+cat &amp;lt;- cat_claw[-ind,]
+# replace empty spaces with NA
+cat$Animal.Name[cat$Animal.Name == &amp;quot;&amp;quot;] &amp;lt;- NA
+cat$Distinguishing.Markings[cat$Distinguishing.Markings == &amp;quot;&amp;quot;] &amp;lt;- NA
+cat$Reason[cat$Reason == &amp;quot;&amp;quot;] &amp;lt;- NA
+# Check the data
+glimpse(cat)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Rows: 199
+## Columns: 21
+## $ Animal.ID               &amp;lt;int&amp;gt; 1032415, 1032962, 1033799, 1033965, 1038328, …
+## $ Animal.Name             &amp;lt;chr&amp;gt; &amp;quot;HARLEY&amp;quot;, &amp;quot;TRUCKER&amp;quot;, NA, NA, NA, &amp;quot;PUDDY TAT&amp;quot;,…
+## $ Species                 &amp;lt;chr&amp;gt; &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Cat&amp;quot;, &amp;quot;Ca…
+## $ Gender                  &amp;lt;chr&amp;gt; &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;F&amp;quot;, &amp;quot;M&amp;quot;, &amp;quot;F&amp;quot;, …
+## $ Date.Of.Birth           &amp;lt;date&amp;gt; 1999-09-18, 1998-04-10, 2000-02-02, 2000-03-…
+## $ Primary.Breed           &amp;lt;chr&amp;gt; &amp;quot;Domestic Shorthair&amp;quot;, &amp;quot;Domestic Shorthair&amp;quot;, &amp;quot;…
+## $ Secondary.Breed         &amp;lt;chr&amp;gt; &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mix&amp;quot;, &amp;quot;Mi…
+## $ Declawed                &amp;lt;chr&amp;gt; &amp;quot;None&amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;None&amp;quot;, &amp;quot;Fron…
+## $ Distinguishing.Markings &amp;lt;chr&amp;gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…
+## $ Purebred                &amp;lt;int&amp;gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+## $ BodyWeight              &amp;lt;dbl&amp;gt; 0.00, 0.00, 2.00, 0.00, 0.00, 0.00, 0.00, 12.…
+## $ BodyWeightUnit          &amp;lt;chr&amp;gt; NA, NA, &amp;quot;pound&amp;quot;, NA, NA, NA, NA, &amp;quot;pound&amp;quot;, NA,…
+## $ PrimaryColor            &amp;lt;chr&amp;gt; &amp;quot;Black&amp;quot;, &amp;quot;Grey&amp;quot;, &amp;quot;Black&amp;quot;, &amp;quot;Orange&amp;quot;, &amp;quot;Black&amp;quot;, …
+## $ SecondaryColor          &amp;lt;chr&amp;gt; &amp;quot;White&amp;quot;, NA, NA, &amp;quot;White&amp;quot;, &amp;quot;White&amp;quot;, &amp;quot;Brown&amp;quot;, N…
+## $ ColorPattern            &amp;lt;chr&amp;gt; NA, &amp;quot;Tiger&amp;quot;, NA, NA, NA, &amp;quot;Tiger&amp;quot;, &amp;quot;Tortoisesh…
+## $ Intake.Date             &amp;lt;date&amp;gt; 2000-03-18, 2000-04-06, 2000-05-02, 2000-05-…
+## $ Intake.Type             &amp;lt;chr&amp;gt; &amp;quot;Owner/Guardian Surrender&amp;quot;, &amp;quot;Stray&amp;quot;, &amp;quot;Owner/G…
+## $ Intake.Subtype          &amp;lt;chr&amp;gt; &amp;quot;Schedule&amp;quot;, &amp;quot;Walk In&amp;quot;, &amp;quot;Walk In&amp;quot;, &amp;quot;Walk In&amp;quot;, …
+## $ Reason                  &amp;lt;chr&amp;gt; NA, NA, &amp;quot;Too Many Pets&amp;quot;, &amp;quot;Too Many Pets&amp;quot;, NA,…
+## $ Reason.Category         &amp;lt;chr&amp;gt; NA, NA, &amp;quot;Owner problem&amp;quot;, &amp;quot;Owner problem&amp;quot;, NA,…
+## $ diff_in_days            &amp;lt;drtn&amp;gt; 182 days, 727 days, 90 days, 61 days, 3 days…&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;what-to-plot&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What to plot?&lt;/h3&gt;
+&lt;p&gt;Plot Age vs Declawed using Boxplot&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;boxplot(as.numeric(diff_in_days) ~ Declawed, data = cat, horizontal = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/why_r/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Can we make it more attractive looking?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;create-graph-using-ggplot&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Create graph using ggplot&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#The image_graph() function opens a new graphics device similar to e.g. png() or x11(). 
+# It returns an image objec to which the plot(s) will be written
+fig &amp;lt;- image_graph(width = 600, height = 600, res = 96)
+
+# plots Age (in years) vs Declawed and saves it as an image
+ggplot(cat, aes(Declawed, round(as.numeric(diff_in_days)/365), 2)) + 
+  geom_boxplot(outlier.size = 0) + 
+  geom_jitter(position=position_jitter(width=0.30), shape = 20, size = 3, aes(colour=Declawed), alpha=0.75) + 
+  stat_summary(fun.y=mean, shape=23, size = 3, fill = &amp;quot;orange&amp;quot;, col= &amp;quot;black&amp;quot;, geom=&amp;#39;point&amp;#39;) +
+  labs (title= &amp;quot;Cats: Age vs Declawed &amp;quot;, x = &amp;quot; Declawed&amp;quot;, y = &amp;quot; Age&amp;quot;) +
+  theme(panel.border = element_rect(fill = NA, colour = &amp;quot;black&amp;quot;, size = 2)) +
+  theme(plot.title = element_text(size = 20, vjust = 2)) +
+  ggsave(&amp;#39;~/Documents/my_R/RLadiesMNE/ggplot_image.png&amp;#39;) &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: `fun.y` is deprecated. Use `fun` instead.&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Saving 6.25 x 6.25 in image&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;adding-an-animation-to-a-graph&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Adding an animation to a graph:&lt;/h3&gt;
+&lt;p&gt;Read gif and background files&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# read cat gif file
+cat_gif &amp;lt;- image_read(&amp;quot;http://media.giphy.com/media/q0ujUmppx3Fu0/giphy.gif&amp;quot;)  
+#
+# Background image
+graph_bg &amp;lt;- image_read(&amp;quot;~/Documents/my_R/RLadiesMNE/ggplot_image.png&amp;quot;)
+background &amp;lt;- image_background(image_scale(graph_bg, &amp;quot;650&amp;quot;), &amp;quot;white&amp;quot;, flatten = TRUE)
+# Combine and flatten frames
+frames &amp;lt;- image_apply(cat_gif, function(frame) {
+  image_composite(background, frame, offset = &amp;quot;+410+10&amp;quot;)
+})&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Turn frames into animation
+animation &amp;lt;- image_animate(frames, fps = 10)
+print(animation)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;Cat_Declawed.gif&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;happy-plotting&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Happy Plotting!&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>External Project</title>
       <link>/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>

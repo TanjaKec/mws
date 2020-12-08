@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RStudio | tanja&#39;s website</title>
+    <title>general linear model | tanja&#39;s website</title>
     <link>/tag/-slug/</link>
       <atom:link href="/tag/-slug/index.xml" rel="self" type="application/rss+xml" />
-    <description>RStudio</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 14 May 2018 00:00:00 +0000</lastBuildDate>
+    <description>general linear model</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 28 Jun 2012 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/TK.jpg</url>
-      <title>RStudio</title>
+      <title>general linear model</title>
       <link>/tag/-slug/</link>
     </image>
     
     <item>
       <title>Data Landscapes$\colon$ a pragmatic and philosophical visualisation of the sustainable urban landscape</title>
-      <link>/talk/erum2018/</link>
-      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
-      <guid>/talk/erum2018/</guid>
+      <link>/talk/user2016/</link>
+      <pubDate>Thu, 28 Jun 2012 00:00:00 +0000</pubDate>
+      <guid>/talk/user2016/</guid>
       <description>
 
 
@@ -30,35 +30,12 @@
 &lt;/p&gt;
 </description>
     </item>
-    
-  </channel>
-</rss>
-   </item>
     
     <item>
       <title>Smooth Bootstrap Inference for Parametric Quantile Regression</title>
       <link>/talk/user2012/</link>
       <pubDate>Tue, 12 Jun 2012 00:00:00 +0000</pubDate>
       <guid>/talk/user2012/</guid>
-      <description>
-
-
-&lt;p&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click on the &lt;strong&gt;PDF&lt;/strong&gt; button above to view the slides.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Construction of the Reference Growth Charts for Saudi Arabian Children and Adolescents</title>
-      <link>/talk/fordham/</link>
-      <pubDate>Thu, 18 Jun 2009 00:00:00 +0000</pubDate>
-      <guid>/talk/fordham/</guid>
       <description>
 
 
