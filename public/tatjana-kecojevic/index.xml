@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tatjana Kecojevic | tanja&#39;s website</title>
+    <link>/tatjana-kecojevic/</link>
+      <atom:link href="/tatjana-kecojevic/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tatjana Kecojevic</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>/media/TK.jpg</url>
+      <title>Tatjana Kecojevic</title>
+      <link>/tatjana-kecojevic/</link>
+    </image>
+    
+  </channel>
+</rss>
