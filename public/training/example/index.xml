@@ -13,39 +13,6 @@
     </image>
     
     <item>
-      <title>Reproducible Research</title>
-      <link>/training/example/example1/</link>
-      <pubDate>Tue, 05 Nov 2019 00:00:00 +0100</pubDate>
-      <guid>/training/example/example1/</guid>
-      <description>
-
-
-&lt;p&gt;This course is designed to give you an appreciation of R programming as a tool for reproducible research. It focuses on packages that will help you access your data, do necessary visualisation and communication in a dynamic and reproducible manner.&lt;/p&gt;
-&lt;div id=&#34;if-you-would-like-to-learn-to&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;If you would like to learn to:&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Store in one place your research methods, results and interpretation&lt;/li&gt;
-&lt;li&gt;Update your research methodology and automate the update of the results&lt;/li&gt;
-&lt;li&gt;Write your research text and code in R Markdown&lt;/li&gt;
-&lt;li&gt;Generate reproducible reports that display your code and results&lt;/li&gt;
-&lt;li&gt;Assemble your research reporting as either HTML, a PDF or a Word document using the package rmarkdown&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;then-this-course-is-for-you&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;then this course is for you!&lt;/h4&gt;
-&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    This course is available at 👉 &lt;a href=&#34;https://reproducibleresearchinr.rbind.io&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;https://reproducibleresearchinr.rbind.io&#34;&gt;https://reproducibleresearchinr.rbind.io&lt;/a&gt;&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;The course has been delivered at &lt;a href=&#34;http://www.bos.rs/en/&#34;&gt;Belgrade Open School (BOS)&lt;/a&gt; and &lt;a href=&#34;https://ifdt.bg.ac.rs&#34;&gt;the Institute of Philosophy and Social Theory (IFDT)&lt;/a&gt; at &lt;a href=&#34;https://www.bg.ac.rs/en/&#34;&gt;the University of Belograde&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Build a website with blogdown in R</title>
       <link>/training/example/example2/</link>
       <pubDate>Sun, 05 Jul 2020 00:00:00 +0100</pubDate>
@@ -80,6 +47,39 @@ Figure 1: Xaringan presentation
 &lt;/div&gt;
 &lt;hr /&gt;
 &lt;p&gt;The workshop has been delivered at &lt;a href=&#34;https://2020.erum.io/&#34;&gt;eRum!2020 - European R Users Meeting&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reproducible Research</title>
+      <link>/training/example/example1/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0100</pubDate>
+      <guid>/training/example/example1/</guid>
+      <description>
+
+
+&lt;p&gt;This course is designed to give you an appreciation of R programming as a tool for reproducible research. It focuses on packages that will help you access your data, do necessary visualisation and communication in a dynamic and reproducible manner.&lt;/p&gt;
+&lt;div id=&#34;if-you-would-like-to-learn-to&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;If you would like to learn to:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Store in one place your research methods, results and interpretation&lt;/li&gt;
+&lt;li&gt;Update your research methodology and automate the update of the results&lt;/li&gt;
+&lt;li&gt;Write your research text and code in R Markdown&lt;/li&gt;
+&lt;li&gt;Generate reproducible reports that display your code and results&lt;/li&gt;
+&lt;li&gt;Assemble your research reporting as either HTML, a PDF or a Word document using the package rmarkdown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;then-this-course-is-for-you&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;then this course is for you!&lt;/h4&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This course is available at 👉 &lt;a href=&#34;https://reproducibleresearchinr.rbind.io&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;https://reproducibleresearchinr.rbind.io&#34;&gt;https://reproducibleresearchinr.rbind.io&lt;/a&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The course has been delivered at &lt;a href=&#34;http://www.bos.rs/en/&#34;&gt;Belgrade Open School (BOS)&lt;/a&gt; and &lt;a href=&#34;https://ifdt.bg.ac.rs&#34;&gt;the Institute of Philosophy and Social Theory (IFDT)&lt;/a&gt; at &lt;a href=&#34;https://www.bg.ac.rs/en/&#34;&gt;the University of Belograde&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     

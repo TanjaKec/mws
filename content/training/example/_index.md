@@ -16,5 +16,5 @@ weight: 1
 
 ## My recent courses
 
-Here you will find some of the courses which I have recently delivered. They serve as individual units and you can access them by cliking on their titles on the left hand side. I hope you'll enjoy them. 
+Here you will find some of the courses which I have recently delivered. They serve as individual units and you can access them by clicking on their titles on the left hand side. I hope you will enjoy them. 
 

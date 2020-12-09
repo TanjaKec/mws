@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/training/example/example2/</loc>
+    <lastmod>2020-07-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/training/example/example1/</loc>
     <lastmod>2019-11-05T00:00:00+01:00</lastmod>
   </url>
@@ -10,11 +15,6 @@
   <url>
     <loc>/training/example/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/training/example/example2/</loc>
-    <lastmod>2020-07-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
