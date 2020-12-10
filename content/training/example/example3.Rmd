@@ -5,11 +5,11 @@ linktitle:
 menu:
   example:
     parent: 
-    weight: 1
+    weight: 4
 title: Data challenge with R
 toc: 
 type: docs
-weight: 1
+weight: 4
 ---
 
 This course is designed to give you an appreciation of R programming as a tool for data exploration. It focuses on packages that will help you do exploratory data analysis, visualisation and communication in a dynamic and reproducible manner.

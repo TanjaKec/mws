@@ -13,6 +13,38 @@
     </image>
     
     <item>
+      <title>Learn to access, organise, analyse and argue with data using R</title>
+      <link>/training/example/example4/</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0100</pubDate>
+      <guid>/training/example/example4/</guid>
+      <description>
+
+
+&lt;p&gt;The ever emerging Internet of Things (IoT) produces vast amounts of data that can be analysed to gain useful insights into trends. The R language is widely used by statisticians for data analysis, and the popularity of R programming has increased greatly in the recent years.&lt;/p&gt;
+&lt;p&gt;In this workshop we teach you to ‘speak data using R’ by taking a step by step approach, starting by explaining core programming principles of the R programming language, to importing data and employing basic wrangling techniques and the grammar of graphics’ philosophy. This will enable you to produce compelling visualisations that can ultimately illustrate useful insights from your data.&lt;/p&gt;
+&lt;p&gt;Through a series of demonstrations and hands on exercises you will learn some of the fundamental concepts of R and you will get to know how to use its tools in a typical data science project. We will introduce you to graphical and numerical techniques for exploring the information concealed within a dataset. After we develop an understanding of our data we will use R’s reproducible approach in telling our data story by creating R-Markdown documents.&lt;/p&gt;
+&lt;p&gt;At the end of the workshop, participants will be able to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Import data from different sources into the R environment&lt;/li&gt;
+&lt;li&gt;Carry out basic data pre-processing &amp;amp; wrangling&lt;/li&gt;
+&lt;li&gt;Learn to distinguish the most appropriate visualisations to be used for any given data challenge&lt;/li&gt;
+&lt;li&gt;Build advanced visualisations: graphs and maps&lt;/li&gt;
+&lt;li&gt;Gain proficiency in data pre-processing, data wrangling and visualisation in R by putting acquired knowledge into application, adopting a reproducible approach through the creation of RMarkdown documents&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This course is available at 👉 &lt;a href=&#34;https://introtor.netlify.app/&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;https://introtor.netlify.app/&#34;&gt;https://introtor.netlify.app/&lt;/a&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;👉 Go to the following GitHub repo to download the material: &lt;a href=&#34;https://github.com/TanjaKec/ASDA&#34; class=&#34;uri&#34;&gt;https://github.com/TanjaKec/ASDA&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;This workshop has been delivered for &lt;a href=&#34;https://www.asda.com/&#34;&gt;ASDA&lt;/a&gt; data development training.&lt;/p&gt;
+&lt;p&gt;The workshop has been delivered in partnership with &lt;a href=&#34;https://geolytix.co.uk/&#34;&gt;GEOLYTIX&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Build a website with blogdown in R</title>
       <link>/training/example/example2/</link>
       <pubDate>Sun, 05 Jul 2020 00:00:00 +0100</pubDate>
@@ -51,6 +83,39 @@ Figure 1: Xaringan presentation
     </item>
     
     <item>
+      <title>Reproducible Research</title>
+      <link>/training/example/example1/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>/training/example/example1/</guid>
+      <description>
+
+
+&lt;p&gt;This course is designed to give you an appreciation of R programming as a tool for reproducible research. It focuses on packages that will help you access your data, do necessary visualisation and communication in a dynamic and reproducible manner.&lt;/p&gt;
+&lt;div id=&#34;if-you-would-like-to-learn-to&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;If you would like to learn to:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Store in one place your research methods, results and interpretation&lt;/li&gt;
+&lt;li&gt;Update your research methodology and automate the update of the results&lt;/li&gt;
+&lt;li&gt;Write your research text and code in R Markdown&lt;/li&gt;
+&lt;li&gt;Generate reproducible reports that display your code and results&lt;/li&gt;
+&lt;li&gt;Assemble your research reporting as either HTML, a PDF or a Word document using the package rmarkdown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;then-this-course-is-for-you&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;then this course is for you!&lt;/h4&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This course is available at 👉 &lt;a href=&#34;https://reproducibleresearchinr.rbind.io&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;https://reproducibleresearchinr.rbind.io&#34;&gt;https://reproducibleresearchinr.rbind.io&lt;/a&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The course has been delivered at &lt;a href=&#34;http://www.bos.rs/en/&#34;&gt;Belgrade Open School (BOS)&lt;/a&gt; and &lt;a href=&#34;https://ifdt.bg.ac.rs&#34;&gt;the Institute of Philosophy and Social Theory (IFDT)&lt;/a&gt; at &lt;a href=&#34;https://www.bg.ac.rs/en/&#34;&gt;the University of Belograde&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Data challenge with R</title>
       <link>/training/example/example3/</link>
       <pubDate>Sun, 03 Nov 2019 00:00:00 +0100</pubDate>
@@ -80,39 +145,6 @@ Figure 1: Xaringan presentation
 &lt;p&gt;This workshop is a part of The Autumn Data School program organised as a part of the &lt;a href=&#34;https://www.rs.undp.org/content/serbia/en/home/projects/opendata.html&#34;&gt;Open Data - Open Opportunities&lt;/a&gt; project.&lt;/p&gt;
 &lt;p&gt;You can download the Autumn Data School program from &lt;a href=&#34;https://www.rs.undp.org/content/dam/serbia/undp_rs_Program%20Radionice_Open%20Data-1.pdf&#34;&gt;here 👇&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The workshop has been delivered in partnership with &lt;a href=&#34;http://www.rs.undp.org&#34;&gt;UNDP Serbia&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Reproducible Research</title>
-      <link>/training/example/example1/</link>
-      <pubDate>Tue, 05 Nov 2019 00:00:00 +0100</pubDate>
-      <guid>/training/example/example1/</guid>
-      <description>
-
-
-&lt;p&gt;This course is designed to give you an appreciation of R programming as a tool for reproducible research. It focuses on packages that will help you access your data, do necessary visualisation and communication in a dynamic and reproducible manner.&lt;/p&gt;
-&lt;div id=&#34;if-you-would-like-to-learn-to&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;If you would like to learn to:&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Store in one place your research methods, results and interpretation&lt;/li&gt;
-&lt;li&gt;Update your research methodology and automate the update of the results&lt;/li&gt;
-&lt;li&gt;Write your research text and code in R Markdown&lt;/li&gt;
-&lt;li&gt;Generate reproducible reports that display your code and results&lt;/li&gt;
-&lt;li&gt;Assemble your research reporting as either HTML, a PDF or a Word document using the package rmarkdown&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;then-this-course-is-for-you&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;then this course is for you!&lt;/h4&gt;
-&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    This course is available at 👉 &lt;a href=&#34;https://reproducibleresearchinr.rbind.io&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;https://reproducibleresearchinr.rbind.io&#34;&gt;https://reproducibleresearchinr.rbind.io&lt;/a&gt;&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;The course has been delivered at &lt;a href=&#34;http://www.bos.rs/en/&#34;&gt;Belgrade Open School (BOS)&lt;/a&gt; and &lt;a href=&#34;https://ifdt.bg.ac.rs&#34;&gt;the Institute of Philosophy and Social Theory (IFDT)&lt;/a&gt; at &lt;a href=&#34;https://www.bg.ac.rs/en/&#34;&gt;the University of Belograde&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

@@ -3,13 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/training/example/example2/</loc>
-    <lastmod>2020-07-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/training/example/example3/</loc>
-    <lastmod>2019-11-03T00:00:00+01:00</lastmod>
+    <loc>/training/example/example4/</loc>
+    <lastmod>2020-11-20T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -18,8 +13,18 @@
   </url>
   
   <url>
+    <loc>/training/example/example2/</loc>
+    <lastmod>2020-07-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/training/example/example1/</loc>
-    <lastmod>2019-11-05T00:00:00+01:00</lastmod>
+    <lastmod>2020-02-15T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/training/example/example3/</loc>
+    <lastmod>2019-11-03T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -39,7 +44,7 @@
   
   <url>
     <loc>/training/</loc>
-    <lastmod>2020-07-05T00:00:00+01:00</lastmod>
+    <lastmod>2020-11-20T00:00:00+01:00</lastmod>
   </url>
   
   <url>
