@@ -11,7 +11,7 @@ library(knitr)
 ```
 
 
-- [Kako se kretalo širenje korona virusa u Srbiji od marta do danas?](https://www.danas.rs/naslovna/naslovna-za-21-jul-2020/)
+- [Danas: ](https://www.danas.rs/) [ Kako se kretalo širenje korona virusa u Srbiji od marta do danas?](https://www.danas.rs/naslovna/naslovna-za-21-jul-2020/)
 
 ```{r danas, out.extra='style="border: none;"', fig.cap="Featered article", echo = FALSE}
 knitr::include_url('https://www.danas.rs/drustvo/kako-se-kretalo-sirrenje-korona-virus-u-srbiji-od-marta-do-danas/')
@@ -39,7 +39,7 @@ knitr::include_url('https://startit.rs/kreatori-i-alati-tatjana-kecojevic-data-s
 
 ---
 
-[Northwest Universities R Day](https://www.software.ac.uk/blog/2019-01-23-northwest-universities-r-day-event)
+[Northwest Universities R Day: ](https://www.software.ac.uk/blog/2019-01-23-northwest-universities-r-day-event) [panel discussion around future directions of R]()
 
 [![](/in_media/_index_files/nwuRday.jpg){width=50% height=50%}](https://www.software.ac.uk/blog/2019-01-23-northwest-universities-r-day-event)
 
