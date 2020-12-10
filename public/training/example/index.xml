@@ -51,6 +51,40 @@ Figure 1: Xaringan presentation
     </item>
     
     <item>
+      <title>Data challenge with R</title>
+      <link>/training/example/example3/</link>
+      <pubDate>Sun, 03 Nov 2019 00:00:00 +0100</pubDate>
+      <guid>/training/example/example3/</guid>
+      <description>
+
+
+&lt;p&gt;This course is designed to give you an appreciation of R programming as a tool for data exploration. It focuses on packages that will help you do exploratory data analysis, visualisation and communication in a dynamic and reproducible manner.&lt;/p&gt;
+&lt;div id=&#34;if-you-would-like-to&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;If you would like to:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Discover how to find and access data and prepare it for exploration and visualistion&lt;/li&gt;
+&lt;li&gt;Learn to explore, visualize, and analyse data in a dynamic and reproducible manner&lt;/li&gt;
+&lt;li&gt;Gain experience in data wrangling, exploratory data analysis and data visualisation, and effective communication of results&lt;/li&gt;
+&lt;li&gt;Work on case studies inspired by real problems and based on open data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;then-this-course-is-for-you&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;then this course is for you! 😀&lt;/h4&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This course is available at 👉 &lt;a href=&#34;https://datachallengewithr.rbind.io/&#34; class=&#34;uri&#34;&gt;&lt;a href=&#34;https://datachallengewithr.rbind.io/&#34;&gt;https://datachallengewithr.rbind.io/&lt;/a&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;This workshop is a part of The Autumn Data School program organised as a part of the &lt;a href=&#34;https://www.rs.undp.org/content/serbia/en/home/projects/opendata.html&#34;&gt;Open Data - Open Opportunities&lt;/a&gt; project.&lt;/p&gt;
+&lt;p&gt;You can download the Autumn Data School program from &lt;a href=&#34;https://www.rs.undp.org/content/dam/serbia/undp_rs_Program%20Radionice_Open%20Data-1.pdf&#34;&gt;here 👇&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The workshop has been delivered in partnership with &lt;a href=&#34;http://www.rs.undp.org&#34;&gt;UNDP Serbia&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Reproducible Research</title>
       <link>/training/example/example1/</link>
       <pubDate>Tue, 05 Nov 2019 00:00:00 +0100</pubDate>
