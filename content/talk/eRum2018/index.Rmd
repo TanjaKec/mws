@@ -29,7 +29,7 @@ publishDate: "2018-05-16"
 slides: https://tanjakec.github.io/eRumTalk/eRumTK.html#1
 #summary: An example talk using Academic's Markdown slides feature.
 tags: [rstats, cloud, RStudio, AWS]
-title: Data Landscapes$\colon$ a pragmatic and philosophical visualisation of the sustainable urban landscape
+title: Setting Up Your R Workshop In The Cloud
 url_code: ""
 url_pdf: "https://tanjakec.github.io/eRumTalk/eRumTK.html#1"
 #url_slides: "UseR_2012.pdf"

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent Talks | tanja&#39;s website</title>
+    <title>Selected Talks | tanja&#39;s website</title>
     <link>/talk/</link>
       <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
-    <description>Recent Talks</description>
+    <description>Selected Talks</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 17 Jun 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/TK.jpg</url>
-      <title>Recent Talks</title>
+      <title>Selected Talks</title>
       <link>/talk/</link>
     </image>
     
@@ -32,7 +32,7 @@
     </item>
     
     <item>
-      <title>Data Landscapes$\colon$ a pragmatic and philosophical visualisation of the sustainable urban landscape</title>
+      <title>Setting Up Your R Workshop In The Cloud</title>
       <link>/talk/erum2018/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       <guid>/talk/erum2018/</guid>
