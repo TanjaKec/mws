@@ -30,6 +30,7 @@ This course is available at 👉 <https://reproducibleresearchinr.rbind.io>
 
 ---
 
+
 The course has been delivered at [Belgrade Open School (BOS)](http://www.bos.rs/en/) and [the Institute of Philosophy and Social Theory (IFDT)](https://ifdt.bg.ac.rs) at [the University of Belograde](https://www.bg.ac.rs/en/).
 
 
