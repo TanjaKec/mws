@@ -9,13 +9,13 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Thematic maps are geographical maps in which spatial data distributions are visualised. Earlier this year I contributed to the [CINS’](https://www.cins.rs/en/) article about [donations to local political parties for the period between 2012-2018](https://www.cins.rs/sns-sps-i-ds-za-sedam-godina-gradjani-strankama-donirali-oko-15-milijardi-dinara/). We created an interactive thematic map, choropleth, shading the development group of the town and adding two more layers of information, i.e. attributes: the total amount of money donated (size and the colour of the bubble) and the amount of money received by each of the political party (popup menu)
+Thematic maps are geographical maps in which spatial data distributions are visualised. Earlier this year I contributed to the [CINS’](https://www.cins.rs/en/) article about [donations to local political parties for the period between 2012-2018](https://www.cins.rs/sns-sps-i-ds-za-sedam-godina-gradjani-strankama-donirali-oko-15-milijardi-dinara/). We created an interactive thematic map, choropleth, shading the development group of the town and adding two more layers of information, i.e. attributes: the total amount of money donated (size and the colour of the bubble) and the amount of money received by each of the political parties (popup menu)
 
 <blockquote class="twitter-tweet"><p lang="und" dir="ltr">🔎Pogledajte odakle dolaze donatori <a href="https://twitter.com/sns_srbija?ref_src=twsrc%5Etfw">@sns_srbija</a> <a href="https://twitter.com/socijalisti?ref_src=twsrc%5Etfw">@socijalisti</a> i <a href="https://twitter.com/demokrate?ref_src=twsrc%5Etfw">@demokrate</a> i ko je prikupio najviše para od donacija u periodu od sedam godina 💸👇<a href="https://t.co/2HHXrSLSLC">https://t.co/2HHXrSLSLC</a></p>&mdash; CINS (@CINSerbia) <a href="https://twitter.com/CINSerbia/status/1264812939401400320?ref_src=twsrc%5Etfw">May 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-To create an interactive map like this in R you will need the [`tmap`](https://cran.r-project.org/web/packages/tmap/tmap.pdf) package. In order to provide the workflow to create thematic maps additionally you need a set of tools for reading and processing spatial data available through the [`tmaptools`](https://cran.r-project.org/web/packages/tmaptools/index.html). I will illustrate how easy it is to create a thematic map using the `tmap` package, but you can learn more about this package from the [tmap: get started!](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html) website.
+To create an interactive map like this in R you will need the [`tmap`](https://cran.r-project.org/web/packages/tmap/tmap.pdf) package. In order to provide the workflow to create thematic maps, additionally you need a set of tools for reading and processing spatial data, available through the [`tmaptools`](https://cran.r-project.org/web/packages/tmaptools/index.html). I will illustrate how easy it is to create a thematic map using the `tmap` package, but you can learn more about this package from the [tmap: get started!](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html) website.
 
-R has impressive geographic capabilities and can handle different kinds of spatial data file formats including geojson and KML. In this example we will make a use of the ESRI Shapefile format, which stores non-topological geometry and attribute information for the spatial features in a data set. A shapefile consists minimally of a main file, an index file, and a dBASE table.
+R has impressive geographic capabilities and can handle different kinds of spatial data file formats including geojson and KML. In this example we will make use of the ESRI Shapefile format, which stores non-topological geometry and attribute information for the spatial features in a data set. A shapefile consists minimally of a main file, an index file, and a dBASE table.
 
   - .shp - lists shape and vertices
   - .shx - has index with offsets
@@ -47,12 +47,12 @@ serbia_districts1 <- st_read(serbia_location1)
 
 The visualisation needs to
 
-- indicate the development group for each of the Serbian municipality
-- display donations to local political parties for the period between 2012-2018 for each of the municipality
+- indicate the development group for each Serbian municipality
+- display donations to local political parties for the period between 2012-2018 for each municipality
 
-Belgrade city has several municipalities, but donations to local political parties for the period between 2012-2018 is given for the whole of Belgrade. This requires to pull out the boundary for whole of the Belgrade district and to combaine it with the boundaries for the rest of Serbian municipalities. 
+Belgrade city has several municipalities, but donations to local political parties for the period between 2012-2018 is given for the whole of Belgrade. This requires pulling out the boundary for the whole of the Belgrade district and combining it with the boundaries for the rest of the Serbian municipalities.
 
-In order to filter the necessary geometry for Belgrade district and to combine it with the sf data for Serbian municipalities we will use [`tidyverse` methods for sf objects](https://r-spatial.github.io/sf/reference/tidyverse.html). Another issue we need to address is that data also contains information about Kosovo which needs to be included on the map. We will read shape files for Serbian and Kosovo municipalities and combine it into one. 
+In order to filter the necessary geometry for the Belgrade district and to combine it with the sf data for Serbian municipalities we will use [`tidyverse` methods for sf objects](https://r-spatial.github.io/sf/reference/tidyverse.html). Another issue we need to address is that data also contains information about Kosovo which needs to be included on the map. We will read shape files for Serbian and Kosovo municipalities and combine them into one. 
 
 ```{r, eval=FALSE}
 
@@ -84,7 +84,7 @@ serbia_districts_BG1 <- rbind(BG, serbia_districts_BG)
 sr <- rbind(serbia_districts_BG1, kosovo_districts)
 ```
 
-In the next step we read data to be maped given in the Excel file and make sure that the names of the municipalities correspond to the names in the `sf` file old fashion way 😁.
+In the next step we read data to be mapped given in the Excel file and make sure that the names of the municipalities correspond to the names in the `sf` file in the old fashioned way 😁.
 
 ```{r, eval=FALSE}
 # read excel file
@@ -113,7 +113,7 @@ my_map <- left_join(sr, razvijenost,
                     by=c("NL_NAME_2" = "Town"))
 ```
 
-Once data is organised it can be mapped using `tmap`. To make it aesthetically more appealing we will rescale the values for total donation so that the bubbles that are going to be used in its visualisation are not too small nor too big. Another matter that needs to be address is that polygon of Negotin's municipality has an extra border that needs to be remove before we can map data.  
+Once data is organised it can be mapped using `tmap`. To make it aesthetically more appealing we will rescale the values for total donations so that the bubbles that are going to be used in its visualisation are not too small nor too big. Another matter that needs to be addressed is that the polygon of Negotin’s municipality has an extra border that needs to be removed before we can map data.  
 
 ```{r, eval=FALSE}
 # ====================
@@ -177,7 +177,7 @@ tm_shape(my_map) +
 
 <iframe seamless src="prilozi_gradjana_links.html" width="100%" height="500"></iframe>
 
-This is information rich visualisation. It incorporates an interactive thematic map, choropleth, shading the development group of the town and adding two more layers of information, i.e. attributes: the total amount of money donated (size and the colour of the bubble) and the amount of money received by each of the political party (popup menu). 
+This is information rich visualisation. It incorporates an interactive thematic map, choropleth, shading the development group of the town and adding two more layers of information, i.e. attributes: the total amount of money donated (size and the colour of the bubble) and the amount of money received by each of the political parties (popup menu). 
 
 Incorporating interactive visualisation with clearly presented facts, helped to empower readers by informing them in an effective manner. 
 

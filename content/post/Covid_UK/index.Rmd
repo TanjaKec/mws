@@ -47,7 +47,7 @@ Experience has shown that for public health intervention to be successful govern
 - promote the use of masks and social distancing
 - release to the public the number of new infections and deaths on a daily basis through open data
 
-The importance of hand washing, wearing a mask and social distancing as a tool to limit disease transmission is well recognised, but nonetheless ensuring social distancing especially in densely populated urban areas is still challenging. Well-educated communities are critical for an effective response and for the prevention of local outbreaks. The sharing of factual information that can be understood and trusted by the communities in bringing about a change in their behaviour to implement efficiently desired public health actions is a must. Trust and transparency are fundamental in obtaining absolute public engagement. The publishing of daily figures that can be freely analysed and scrutinised can help in engaging communities and obtaining its willing and continued support in controlling the spread of infection.
+The importance of hand washing, wearing a mask and social distancing as a tool to limit disease transmission is well recognised, but nonetheless ensuring social distancing especially in densely populated urban areas is still challenging. Well-educated communities are critical for an effective response and for the prevention of local outbreaks. The sharing of factual information that can be understood and trusted by the communities is vital. This will lead to a change in their behaviour to implement efficiently desired public health actions is a must. Trust and transparency are fundamental in obtaining absolute public engagement. The publishing of daily figures that can be freely analysed and scrutinised can help in engaging communities and obtaining its willing and continued support in controlling the spread of infection.
 
 ## Working with a DB in R
 
@@ -202,7 +202,7 @@ dbFetch(
                   group by continentExp"))
 ```
 
-Fortunately for people who are rusty with SQL, and who don't feel like learning both SQL and R, we can do all of this using the `diplyr` package in R.
+Fortunately, for people whose SQL is rusty, and who don't feel like learning both SQL and R, we can do all of this using the `diplyr` package in R.
 
 First we need to declare covid as a `tbl` for use with `dplyr`. We'll call it `covid_ecdc` to avoid any confusion. 
 ```{r}
@@ -210,7 +210,7 @@ covid_ecdc <- tbl(SQLcon, "covid")
 ```
 This will now be treated as an R tibble, but it is still in the database!!!
 
-It is always useful to have a quick glance at the data set structure to find out how the information it contains is structured. Knowledge of the structure is important, because it allows us later to filter out the desired information very precisely based on criteria to limit specific dimensions, i.e. variables.
+It is always useful to have a quick glance at the data set structure to find out how the information it contains is structured. Knowledge of the structure is important, because it allows us later to filter out the desired information very precisely, based on criteria to limit specific dimensions, i.e. variables.
 ```{r}
 covid_ecdc %>%
   glimpse()
@@ -270,10 +270,10 @@ widgetframe::frameWidget(mdt)
 ```
 The experience with COVID-19 shows that the spread of the disease can be controlled by implementing the measures of prevention as soon as an outbreak has been detected.
 
-> To monitor the effectiveness of the introduced measures we will focus on daily cumulative cases of COVID-19 infection that can be expressed as 
+> To monitor the effectiveness of the measures introduced, we will focus on daily cumulative cases of COVID-19 infection that can be expressed as 
 $$F(x) = \sum_{i=1}^{n} x_i$$
 
-> Although $F(x)$ can show the volume of the epidemic it does not tell us directly about the changes in the acceleration of  the spread of infection. This information can be provided by the derivatives of the $F(x)$. The first derivative $F^{’}(x)$ corresponds to the information of the number of new cases detected every day and the second derivative $F^{’’}(x)$ provides the information about the acceleration of the epidemic. $F^{’’}(x) \approx 0$ indicates the state of stagnation, while $F^{’’}(x) < 0$ indicates deceleration and of course any $F^{’’}(x) > 0$ acceleration.
+> Although $F(x)$ can show the volume of the epidemic, it does not tell us directly about the changes in the acceleration of  the spread of infection. This information can be provided by the derivatives of the $F(x)$. The first derivative $F^{’}(x)$ corresponds to the information on the number of new cases detected every day. The second derivative $F^{’’}(x)$ provides the information about the acceleration of the epidemic. $F^{’’}(x) \approx 0$ indicates the state of stagnation, while $F^{’’}(x) < 0$ indicates deceleration and of course any $F^{’’}(x) > 0$ acceleration.
 
 We will carry on with the analysis by tidying `covid_eu` data and adding the information about those derivatives. First, we notice that there are 4 columns used to contain the date of reporting, which will allow us to remove columns 2-4 as redundant. We will only keep the `dateRep` column which requires some tidying up in respect of the format in which the dates are recorded. We will also carry out the necessary calculations for obtaining the second derivative $F^{’’}(x)$ and rename some of the variables to make them easier to display and type. 😁 All of this is very easy to carry out in R using the `tidy verse`, opinionated collection of R packages for data science. 
 
@@ -301,7 +301,7 @@ head(covid_eu) # returns first six rows of the df
 
 # Writing Functions
 
-As we would like to be able to plot this time series of the second derivatives $F^{’’}(x)$ for any country we will create functions that will allow us to extract a country from the `covid_eu` data and to plot it as a time series. 
+As we would like to be able to plot this time series of the second derivatives $F^{’’}(x)$ for any country, we will create functions that will allow us to extract a country from the `covid_eu` data and to plot it as a time series. 
 
 ```{r}
 # function for filltering a country from the given df
@@ -334,7 +334,7 @@ Once we have accessed and tidied up our data in R we can carry out the exploitat
 
 ## plotly and ggplot
 
-We will start reporting by illustrating the time series of the daily number of new cases of infection and deaths. To make this plot more informative, we will create it as an interactive web graphic using the `plotly` library. You can explore different kinds of `plotly` graphs in R from <https://plotly.com/r/basic-charts/> or by reading [Step-by-Step Data Visualization Guideline with Plotly in R](https://medium.com/swlh/step-by-step-data-visualization-guideline-with-plotly-in-r-fbd212640de2) blog post.
+We will start reporting by illustrating the time series of the daily number of new cases of infection and deaths. To make this plot more informative, we will create it as an interactive web graphic using the `plotly` library. You can explore different kinds of `plotly` graphs in R from <https://plotly.com/r/basic-charts/> or by reading the [Step-by-Step Data Visualization Guideline with Plotly in R](https://medium.com/swlh/step-by-step-data-visualization-guideline-with-plotly-in-r-fbd212640de2) blog post.
 
 **[ecdc](https://www.ecdc.europa.eu/en) data updated on <span style="color:dodgerblue3">`r max(covid_eu$dateRep)`</span>**
 

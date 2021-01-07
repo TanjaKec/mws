@@ -835,7 +835,7 @@
       
 
 
-<p>Thematic maps are geographical maps in which spatial data distributions are visualised. Earlier this year I contributed to the <a href="https://www.cins.rs/en/">CINS’</a> article about <a href="https://www.cins.rs/sns-sps-i-ds-za-sedam-godina-gradjani-strankama-donirali-oko-15-milijardi-dinara/">donations to local political parties for the period between 2012-2018</a>. We created an interactive thematic map, choropleth, shading the development group of the town and adding two more layers of information, i.e. attributes: the total amount of money donated (size and the colour of the bubble) and the amount of money received by each of the political party (popup menu)</p>
+<p>Thematic maps are geographical maps in which spatial data distributions are visualised. Earlier this year I contributed to the <a href="https://www.cins.rs/en/">CINS’</a> article about <a href="https://www.cins.rs/sns-sps-i-ds-za-sedam-godina-gradjani-strankama-donirali-oko-15-milijardi-dinara/">donations to local political parties for the period between 2012-2018</a>. We created an interactive thematic map, choropleth, shading the development group of the town and adding two more layers of information, i.e. attributes: the total amount of money donated (size and the colour of the bubble) and the amount of money received by each of the political parties (popup menu)</p>
 <blockquote class="twitter-tweet">
 <p lang="und" dir="ltr">
 🔎Pogledajte odakle dolaze donatori <a href="https://twitter.com/sns_srbija?ref_src=twsrc%5Etfw"><span class="citation">@sns_srbija</span></a> <a href="https://twitter.com/socijalisti?ref_src=twsrc%5Etfw"><span class="citation">@socijalisti</span></a> i <a href="https://twitter.com/demokrate?ref_src=twsrc%5Etfw"><span class="citation">@demokrate</span></a> i ko je prikupio najviše para od donacija u periodu od sedam godina 💸👇<a href="https://t.co/2HHXrSLSLC">https://t.co/2HHXrSLSLC</a>
@@ -843,8 +843,8 @@
 — CINS (<span class="citation">@CINSerbia</span>) <a href="https://twitter.com/CINSerbia/status/1264812939401400320?ref_src=twsrc%5Etfw">May 25, 2020</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>To create an interactive map like this in R you will need the <a href="https://cran.r-project.org/web/packages/tmap/tmap.pdf"><code>tmap</code></a> package. In order to provide the workflow to create thematic maps additionally you need a set of tools for reading and processing spatial data available through the <a href="https://cran.r-project.org/web/packages/tmaptools/index.html"><code>tmaptools</code></a>. I will illustrate how easy it is to create a thematic map using the <code>tmap</code> package, but you can learn more about this package from the <a href="https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html">tmap: get started!</a> website.</p>
-<p>R has impressive geographic capabilities and can handle different kinds of spatial data file formats including geojson and KML. In this example we will make a use of the ESRI Shapefile format, which stores non-topological geometry and attribute information for the spatial features in a data set. A shapefile consists minimally of a main file, an index file, and a dBASE table.</p>
+<p>To create an interactive map like this in R you will need the <a href="https://cran.r-project.org/web/packages/tmap/tmap.pdf"><code>tmap</code></a> package. In order to provide the workflow to create thematic maps, additionally you need a set of tools for reading and processing spatial data, available through the <a href="https://cran.r-project.org/web/packages/tmaptools/index.html"><code>tmaptools</code></a>. I will illustrate how easy it is to create a thematic map using the <code>tmap</code> package, but you can learn more about this package from the <a href="https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html">tmap: get started!</a> website.</p>
+<p>R has impressive geographic capabilities and can handle different kinds of spatial data file formats including geojson and KML. In this example we will make use of the ESRI Shapefile format, which stores non-topological geometry and attribute information for the spatial features in a data set. A shapefile consists minimally of a main file, an index file, and a dBASE table.</p>
 <ul>
 <li>.shp - lists shape and vertices</li>
 <li>.shx - has index with offsets</li>
@@ -870,11 +870,11 @@ serbia_location1 &lt;- &quot;spatial/gadm36_SRB_1.shp&quot;
 serbia_districts1 &lt;- st_read(serbia_location1)</code></pre>
 <p>The visualisation needs to</p>
 <ul>
-<li>indicate the development group for each of the Serbian municipality</li>
-<li>display donations to local political parties for the period between 2012-2018 for each of the municipality</li>
+<li>indicate the development group for each Serbian municipality</li>
+<li>display donations to local political parties for the period between 2012-2018 for each municipality</li>
 </ul>
-<p>Belgrade city has several municipalities, but donations to local political parties for the period between 2012-2018 is given for the whole of Belgrade. This requires to pull out the boundary for whole of the Belgrade district and to combaine it with the boundaries for the rest of Serbian municipalities.</p>
-<p>In order to filter the necessary geometry for Belgrade district and to combine it with the sf data for Serbian municipalities we will use <a href="https://r-spatial.github.io/sf/reference/tidyverse.html"><code>tidyverse</code> methods for sf objects</a>. Another issue we need to address is that data also contains information about Kosovo which needs to be included on the map. We will read shape files for Serbian and Kosovo municipalities and combine it into one.</p>
+<p>Belgrade city has several municipalities, but donations to local political parties for the period between 2012-2018 is given for the whole of Belgrade. This requires pulling out the boundary for the whole of the Belgrade district and combining it with the boundaries for the rest of the Serbian municipalities.</p>
+<p>In order to filter the necessary geometry for the Belgrade district and to combine it with the sf data for Serbian municipalities we will use <a href="https://r-spatial.github.io/sf/reference/tidyverse.html"><code>tidyverse</code> methods for sf objects</a>. Another issue we need to address is that data also contains information about Kosovo which needs to be included on the map. We will read shape files for Serbian and Kosovo municipalities and combine them into one.</p>
 <pre class="r"><code># filter out geometry of Belgrade&#39;s district
 serbia_districts1 &lt;- serbia_districts1 %&gt;% 
   filter(as.character(VARNAME_1) == &quot;Belgrade&quot;)
@@ -901,7 +901,7 @@ serbia_districts_BG1 &lt;- rbind(BG, serbia_districts_BG)
 
 # combine sf data of serbia and Kosovo 
 sr &lt;- rbind(serbia_districts_BG1, kosovo_districts)</code></pre>
-<p>In the next step we read data to be maped given in the Excel file and make sure that the names of the municipalities correspond to the names in the <code>sf</code> file old fashion way 😁.</p>
+<p>In the next step we read data to be mapped given in the Excel file and make sure that the names of the municipalities correspond to the names in the <code>sf</code> file in the old fashioned way 😁.</p>
 <pre class="r"><code># read excel file
 razvijenost &lt;- read_excel(&quot;razvijenost.xlsx&quot;, sheet = 1)
 
@@ -926,7 +926,7 @@ razvijenost$Town[razvijenost$Town ==&quot;Урошевац&quot;] &lt;- ur
 # merge data: sf and excel 
 my_map &lt;- left_join(sr, razvijenost,
                     by=c(&quot;NL_NAME_2&quot; = &quot;Town&quot;))</code></pre>
-<p>Once data is organised it can be mapped using <code>tmap</code>. To make it aesthetically more appealing we will rescale the values for total donation so that the bubbles that are going to be used in its visualisation are not too small nor too big. Another matter that needs to be address is that polygon of Negotin’s municipality has an extra border that needs to be remove before we can map data.</p>
+<p>Once data is organised it can be mapped using <code>tmap</code>. To make it aesthetically more appealing we will rescale the values for total donations so that the bubbles that are going to be used in its visualisation are not too small nor too big. Another matter that needs to be addressed is that the polygon of Negotin’s municipality has an extra border that needs to be removed before we can map data.</p>
 <pre class="r"><code># ====================
 # ----- Mapping ------
 
@@ -985,7 +985,7 @@ tm_shape(my_map) +
             inner.margins = c(0.1, 0.1, 0.05, 0.05)) </code></pre>
 <iframe seamless src="prilozi_gradjana_links.html" width="100%" height="500">
 </iframe>
-<p>This is information rich visualisation. It incorporates an interactive thematic map, choropleth, shading the development group of the town and adding two more layers of information, i.e. attributes: the total amount of money donated (size and the colour of the bubble) and the amount of money received by each of the political party (popup menu).</p>
+<p>This is information rich visualisation. It incorporates an interactive thematic map, choropleth, shading the development group of the town and adding two more layers of information, i.e. attributes: the total amount of money donated (size and the colour of the bubble) and the amount of money received by each of the political parties (popup menu).</p>
 <p>Incorporating interactive visualisation with clearly presented facts, helped to empower readers by informing them in an effective manner.</p>
 <p>This was an excellent example of effective data journalism, employed as a direct result of <a href="https://www.cins.rs/en/">CINS</a> embracing the capacity of the <a href="https://rtoolbox.rbind.io/">RToolbox</a>.</p>
 

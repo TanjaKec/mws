@@ -44,7 +44,6 @@ user_groups:
 - Principal Investigators
 ---
 
-I am a long-time [R](https://www.r-project.org) user with a doctorate in Statistics from [the University of Manchester](https://www.manchester.ac.uk). I spent many years working in the U.K. university sector as a senior lecturer and have published an extensive number of articles and papers in the field of quantile regression. 
-I love sharing knowledge and I use R to create various platforms with education materials that can help people learn to extract insights from data. Unsurprisingly, I am an enthusiastic R user and in addition to my involvement supporting women in STEM related activities, I am dedicated to creating an inclusive culture by developing initiatives supporting all underrepresented groups within the DS community.
+I am a long-time [R](https://www.r-project.org) user with a doctorate in Statistics from [the University of Manchester](https://www.manchester.ac.uk). I spent many years working in the U.K. university sector as a senior lecturer and have published an extensive number of articles and papers in the field of quantile regression. I love sharing knowledge and I use R to create various platforms with education materials that can help people learn to extract insights from data. Unsurprisingly, I am an enthusiastic R user and in addition to my involvement supporting women in STEM related activities, I am dedicated to creating an inclusive culture by developing initiatives supporting all underrepresented groups within the DS community.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/TK_Resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

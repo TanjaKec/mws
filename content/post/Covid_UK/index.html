@@ -44,7 +44,7 @@ Experience has shown that for public health intervention to be successful govern
 <li>promote the use of masks and social distancing</li>
 <li>release to the public the number of new infections and deaths on a daily basis through open data</li>
 </ul>
-<p>The importance of hand washing, wearing a mask and social distancing as a tool to limit disease transmission is well recognised, but nonetheless ensuring social distancing especially in densely populated urban areas is still challenging. Well-educated communities are critical for an effective response and for the prevention of local outbreaks. The sharing of factual information that can be understood and trusted by the communities in bringing about a change in their behaviour to implement efficiently desired public health actions is a must. Trust and transparency are fundamental in obtaining absolute public engagement. The publishing of daily figures that can be freely analysed and scrutinised can help in engaging communities and obtaining its willing and continued support in controlling the spread of infection.</p>
+<p>The importance of hand washing, wearing a mask and social distancing as a tool to limit disease transmission is well recognised, but nonetheless ensuring social distancing especially in densely populated urban areas is still challenging. Well-educated communities are critical for an effective response and for the prevention of local outbreaks. The sharing of factual information that can be understood and trusted by the communities is vital. This will lead to a change in their behaviour to implement efficiently desired public health actions is a must. Trust and transparency are fundamental in obtaining absolute public engagement. The publishing of daily figures that can be freely analysed and scrutinised can help in engaging communities and obtaining its willing and continued support in controlling the spread of infection.</p>
 <div id="working-with-a-db-in-r" class="section level2">
 <h2>Working with a DB in R</h2>
 <p>In big organisations data is often kept in a database and data you wish to access from it might be too large to fit into the memory of your computer. Connecting from R to a database to access the necessary data for an analysis can be very useful, as it allows you to fetch only the chunks needed for the current study. R enables you to access and query a database without having to download the data contained in it. The two most common methods of connection are:</p>
@@ -169,11 +169,11 @@ Experience has shown that for public health intervention to be successful govern
 &gt; 
 &gt; suppressMessages(GET(url2ecdc, write_disk(tf &lt;- tempfile(fileext = &quot;.xlsx&quot;))))</code></pre>
 <pre><code>## Response [https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-2020-11-30.xlsx]
-##   Date: 2020-12-08 16:35
+##   Date: 2021-01-07 16:47
 ##   Status: 200
 ##   Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 ##   Size: 3.41 MB
-## &lt;ON DISK&gt;  /var/folders/71/96w85flx3yl928r2hzpfwvd00000gp/T//RtmpR1zsgo/file14cad6033add9.xlsx</code></pre>
+## &lt;ON DISK&gt;  /var/folders/71/96w85flx3yl928r2hzpfwvd00000gp/T//RtmpbKjYEN/file330122d2408.xlsx</code></pre>
 <pre class="r"><code>&gt; covid_world &lt;- read_excel(tf)</code></pre>
 <p>We will set up the database connection to work on <code>covid_world</code> data.</p>
 <pre class="r"><code>&gt; SQLcon &lt;- dbConnect(RSQLite::SQLite(), &quot;:memory:&quot;)
@@ -226,11 +226,11 @@ Experience has shown that for public health intervention to be successful govern
 +                   group by continentExp&quot;))</code></pre>
 <pre><code>##   continentExp Count
 ## 1       Europe   336</code></pre>
-<p>Fortunately for people who are rusty with SQL, and who don’t feel like learning both SQL and R, we can do all of this using the <code>diplyr</code> package in R.</p>
+<p>Fortunately, for people whose SQL is rusty, and who don’t feel like learning both SQL and R, we can do all of this using the <code>diplyr</code> package in R.</p>
 <p>First we need to declare covid as a <code>tbl</code> for use with <code>dplyr</code>. We’ll call it <code>covid_ecdc</code> to avoid any confusion.</p>
 <pre class="r"><code>&gt; covid_ecdc &lt;- tbl(SQLcon, &quot;covid&quot;)</code></pre>
 <p>This will now be treated as an R tibble, but it is still in the database!!!</p>
-<p>It is always useful to have a quick glance at the data set structure to find out how the information it contains is structured. Knowledge of the structure is important, because it allows us later to filter out the desired information very precisely based on criteria to limit specific dimensions, i.e. variables.</p>
+<p>It is always useful to have a quick glance at the data set structure to find out how the information it contains is structured. Knowledge of the structure is important, because it allows us later to filter out the desired information very precisely, based on criteria to limit specific dimensions, i.e. variables.</p>
 <pre class="r"><code>&gt; covid_ecdc %&gt;%
 +   glimpse()</code></pre>
 <pre><code>## Rows: ??
@@ -316,11 +316,11 @@ You can, however, try to pull the data from the server into R’s memory and by 
 &gt; widgetframe::frameWidget(mdt)</code></pre>
 <p>The experience with COVID-19 shows that the spread of the disease can be controlled by implementing the measures of prevention as soon as an outbreak has been detected.</p>
 <blockquote>
-<p>To monitor the effectiveness of the introduced measures we will focus on daily cumulative cases of COVID-19 infection that can be expressed as
+<p>To monitor the effectiveness of the measures introduced, we will focus on daily cumulative cases of COVID-19 infection that can be expressed as
 <span class="math display">\[F(x) = \sum_{i=1}^{n} x_i\]</span></p>
 </blockquote>
 <blockquote>
-<p>Although <span class="math inline">\(F(x)\)</span> can show the volume of the epidemic it does not tell us directly about the changes in the acceleration of the spread of infection. This information can be provided by the derivatives of the <span class="math inline">\(F(x)\)</span>. The first derivative <span class="math inline">\(F^{’}(x)\)</span> corresponds to the information of the number of new cases detected every day and the second derivative <span class="math inline">\(F^{’’}(x)\)</span> provides the information about the acceleration of the epidemic. <span class="math inline">\(F^{’’}(x) \approx 0\)</span> indicates the state of stagnation, while <span class="math inline">\(F^{’’}(x) &lt; 0\)</span> indicates deceleration and of course any <span class="math inline">\(F^{’’}(x) &gt; 0\)</span> acceleration.</p>
+<p>Although <span class="math inline">\(F(x)\)</span> can show the volume of the epidemic, it does not tell us directly about the changes in the acceleration of the spread of infection. This information can be provided by the derivatives of the <span class="math inline">\(F(x)\)</span>. The first derivative <span class="math inline">\(F^{’}(x)\)</span> corresponds to the information on the number of new cases detected every day. The second derivative <span class="math inline">\(F^{’’}(x)\)</span> provides the information about the acceleration of the epidemic. <span class="math inline">\(F^{’’}(x) \approx 0\)</span> indicates the state of stagnation, while <span class="math inline">\(F^{’’}(x) &lt; 0\)</span> indicates deceleration and of course any <span class="math inline">\(F^{’’}(x) &gt; 0\)</span> acceleration.</p>
 </blockquote>
 <p>We will carry on with the analysis by tidying <code>covid_eu</code> data and adding the information about those derivatives. First, we notice that there are 4 columns used to contain the date of reporting, which will allow us to remove columns 2-4 as redundant. We will only keep the <code>dateRep</code> column which requires some tidying up in respect of the format in which the dates are recorded. We will also carry out the necessary calculations for obtaining the second derivative <span class="math inline">\(F^{’’}(x)\)</span> and rename some of the variables to make them easier to display and type. 😁 All of this is very easy to carry out in R using the <code>tidy verse</code>, opinionated collection of R packages for data science.</p>
 <pre class="r"><code>&gt; # --- tidy data ---
@@ -373,7 +373,7 @@ You can, however, try to pull the data from the server into R’s memory and by 
 </div>
 <div id="writing-functions" class="section level1">
 <h1>Writing Functions</h1>
-<p>As we would like to be able to plot this time series of the second derivatives <span class="math inline">\(F^{’’}(x)\)</span> for any country we will create functions that will allow us to extract a country from the <code>covid_eu</code> data and to plot it as a time series.</p>
+<p>As we would like to be able to plot this time series of the second derivatives <span class="math inline">\(F^{’’}(x)\)</span> for any country, we will create functions that will allow us to extract a country from the <code>covid_eu</code> data and to plot it as a time series.</p>
 <pre class="r"><code>&gt; # function for filltering a country from the given df
 &gt; sep_country &lt;- function(df, ccode){ 
 +   df_c &lt;- df %&gt;% 
@@ -401,7 +401,7 @@ You can, however, try to pull the data from the server into R’s memory and by 
 <p>Once we have accessed and tidied up our data in R we can carry out the exploitative analysis using visualisation as an effective tool.</p>
 <div id="plotly-and-ggplot" class="section level2">
 <h2>plotly and ggplot</h2>
-<p>We will start reporting by illustrating the time series of the daily number of new cases of infection and deaths. To make this plot more informative, we will create it as an interactive web graphic using the <code>plotly</code> library. You can explore different kinds of <code>plotly</code> graphs in R from <a href="https://plotly.com/r/basic-charts/" class="uri">https://plotly.com/r/basic-charts/</a> or by reading <a href="https://medium.com/swlh/step-by-step-data-visualization-guideline-with-plotly-in-r-fbd212640de2">Step-by-Step Data Visualization Guideline with Plotly in R</a> blog post.</p>
+<p>We will start reporting by illustrating the time series of the daily number of new cases of infection and deaths. To make this plot more informative, we will create it as an interactive web graphic using the <code>plotly</code> library. You can explore different kinds of <code>plotly</code> graphs in R from <a href="https://plotly.com/r/basic-charts/" class="uri">https://plotly.com/r/basic-charts/</a> or by reading the <a href="https://medium.com/swlh/step-by-step-data-visualization-guideline-with-plotly-in-r-fbd212640de2">Step-by-Step Data Visualization Guideline with Plotly in R</a> blog post.</p>
 <p><strong><a href="https://www.ecdc.europa.eu/en">ecdc</a> data updated on <span style="color:dodgerblue3">2020-11-30</span></strong></p>
 <pre class="r"><code>&gt; # Plot cases and deaths day-by-day
 &gt; 

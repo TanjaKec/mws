@@ -54,7 +54,6 @@ experience:
   title: Member of the Organisation Committee 
 - company: WiDS
   company_url: "https://www.widsconference.org/"
-  date_end: "2020-09-01"
   date_start: "2018-12-01"
   description: |- 
     Responsibilities include:
@@ -75,9 +74,9 @@ experience:
   date_start: "2017-05-01"
   description: |- 
     Responsibilities include:
-    * Creating DS course materials and teaching aids that support content delivery and skills assessments
-    * Carrying out statistical analysis and work with the clients to interpret the results and how they impact their business
-    * Engaging youth community through the [klikR](http://klikr.rbind.io) initiative
+    * Creating DS course materials and teaching aids that support content delivery and skills assessment
+    * Carrying out statistical analysis and working with clients to interpret the results and how they impact their business
+    * Engaging the youth community through the [klikR](http://klikr.rbind.io) initiative
   location: U.K.
   title: Co-Founder
 - company: R-Ladies
@@ -108,7 +107,7 @@ experience:
     * Teaching and developing of undergraduate and postgraduate courses
     * Participating in research teams and other collaborative research initiatives
     * Personal tutoring to 1st year undergraduate program students and placement visits
-    * Developing and delivering data analysis course training for university’s staff members
+    * Developing and delivering data analysis course training for university staff members
     *	Participating in the University’s various outreach activities
   location: U.K.
   title: Lecturer of Quantitative Modelling
