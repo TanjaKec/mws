@@ -1,7 +1,7 @@
 ---
 title: "Curriculum Vitae"
 author: "Tatjana Kecojevic"
-date: "https://tatjanakeco.netlify.app"
+date: "https://tatjanakeco.rbind.io"
 output: pdf_document
 ---
 
@@ -79,9 +79,9 @@ output: pdf_document
   [**DataTeka**](https://www.datateka.com)
 
     Responsibilities include:
-    * Creating DS course materials and teaching aids that support content delivery and skills assessments
-    * Carrying out statistical analysis and work with the clients to interpret the results and how they impact their business
-    * Engaging youth community through the [klikR](http://klikr.rbind.io) initiative
+    * Creating DS course materials and teaching aids that support content delivery and skills assessment
+    * Carrying out statistical analysis and working with clients to interpret the results and how they impact their business
+    * Engaging the youth community through the [klikR](http://klikr.rbind.io) initiative
     
 **November 2016 - present**  
 
@@ -113,7 +113,7 @@ output: pdf_document
     * Teaching and developing of undergraduate and postgraduate courses
     * Participating in research teams and other collaborative research initiatives
     * Personal tutoring to 1st year undergraduate program students and placement visits
-    * Developing and delivering data analysis course training for university’s staff members
+    *	Developing and delivering data analysis course training for university staff members
     *	Participating in the University’s various outreach activities
 
 
@@ -307,7 +307,7 @@ T. Kecojevic. *Using LMS method for Reference Growth Charts*, Mathematics Resear
 
 ### POSTER PRESENTATIONS 
 
-T. Kecojevic. *Shiny App: Bootstrap to Comprehend Statistical Significance*, Advances in Data Science; Data Science Institute of the University of Manchester, UK; 15-16 May 2017.
+T. Kecojevic. *Shiny App: Bootstrap to Comprehend Statistical Significance*, Advances in Data Science; Data Science Institute of the University of Manchester, UK; 15-16 May 2017
 
 ### CONFERENCE MODERATION
 
