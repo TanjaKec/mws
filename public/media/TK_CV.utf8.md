@@ -17,7 +17,7 @@ output: pdf_document
 
 -  **Board Member**
 
-   [**DS Serbia**](https://datasciconference.com/)
+   [**DS Serbia**](http://www.datascience.rs/)
     
     Responsibilities include:
     
@@ -49,7 +49,7 @@ output: pdf_document
     * Co-organiser of the conference programme
     
 
-**December 2018 - September 2020**
+**December 2018 - present**
 
 - **Ambassador**
   
