@@ -94,18 +94,18 @@ output: pdf_document
     
 **September 2004 - September 2017**
 
-- **Senior Lecturer of Quantitative Modelling**
+- **Senior Lecturer in Quantitative Modelling**
   
   [**University of Central Lancashire**](https://www.uclan.ac.uk)
 
     Responsibilities include:
-    * Course Leader for part-time undergraduate Business Administration Business Study, BA(Hons)
+    * Course Leader for part-time undergraduate Business Administration Business Studies, BA(Hons)
     * Business, Arts, Humanities and Social Sciences (BAHSS) research ethics committee lead reviewer
     * Athena SWAN - Data Analyst for The College of Business, Law and Social Sciences 
 
 **November 2000 - September 2004**
 
-- **Lecturer of Quantitative Modelling**
+- **Lecturer in Quantitative Modelling**
   
   [**University of Central Lancashire**](https://www.uclan.ac.uk)
 
@@ -132,7 +132,7 @@ with InterNews and USAID; a platform wit teaching learning material for statisti
 - The Evolution of the Boka Kotorska as a Sustainable Urban Ecological Entity, 2012 - 2013; in collaboration with School of Art, Design and Performance, UCLan
 - Constructing The Reference Growth Charts for Saudi Arabian Children and Adolescents, 2006 - 2011; in collaboration with King Saud University, Riyadh
 - Antagonistic relationships between fungi and nematodes, February-July 2011; in collaboration with Institute for Plant Protection and Environment, Belgrade
-- Comparisons of growth and adiposity of children with atopic dermatitis with the UK population values, 2005; in collaboration with Academic Unit of Child Health, Booth Hall Childrens Hospital, University of Manchester.
+- Comparisons of growth and adiposity of children with atopic dermatitis with the UK population values, 2005; in collaboration with Academic Unit of Child Health, Booth Hall Childrens Hospital, University of Manchester
 - Analysis of suicides using methods of multivariate statistics, 1998; in collaboration with the Faculty of Organizational Science, University of Belgrade  
 
   #### Key functions performed:

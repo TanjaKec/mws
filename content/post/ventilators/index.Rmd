@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 For patients critically ill with COVID-19, access to a ventilator could be a matter of life or death. In early March at the beginning of the COVID-19 pandemic the Serbian government was not disclosing information about the available number of ventilators to its citizens. [CINS'](https://www.cins.rs/en/) journalists took the initiative to obtain this information and to make it available to the public in an article concerning respiratory equipment in the current crisis. Shortly after, the government took more serious action towards protecting its citizens against the virus.
 
-As a data scientist I was happy and pleased to help and assist CINS’ journalists in making interactive maps informing readers of their findings.
+As a data scientist I was pleased to assist CINS’ journalists in making interactive maps informing readers of their findings.
 
 This article can be found at
 <https://www.cins.rs/en/coronavirus-see-how-many-medical-ventilators-there-are-in-your-town/>
@@ -51,6 +51,6 @@ mydata %>%
 
 ---
 
-This was data democracy in action, a means of holding governments to account and nudging them into action. By empowering citizens to be data literate they are able to cut through the fog of misinformation and to have a deeper understanding of the world we live in. There is no need for everyone to be a data scientist, but there is an urgent need for dataliteracy to be available to everyone. Data is democracy.
+This was data democracy in action, a means of holding governments to account and nudging them into action. By empowering citizens to be data literate they are able to cut through the fog of misinformation and to have a deeper understanding of the world we live in. There is no need for everyone to be a data scientist, but there is an urgent need for data literacy to be available to everyone. Data is democracy.
 
 

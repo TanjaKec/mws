@@ -102,7 +102,7 @@ If we need to pull the data from the server into R's memory we can use the `coll
 
 The `DBI` package can be combined with:
   
-  * the `dplyr` package: to make the `tbl`s and to work on them using the `dplyr` syntax
+  * the `dplyr` package: to make the `tbl`s and to work on them using `dplyr` syntax
   * the `dbplyr` package: allows translation of SQL to dplyr
   * the `odbc`package: provides the odbc drivers, but you could use the functions below with other drivers instead
     

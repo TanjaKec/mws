@@ -873,7 +873,7 @@ serbia_districts1 &lt;- st_read(serbia_location1)</code></pre>
 <li>indicate the development group for each Serbian municipality</li>
 <li>display donations to local political parties for the period between 2012-2018 for each municipality</li>
 </ul>
-<p>Belgrade city has several municipalities, but donations to local political parties for the period between 2012-2018 is given for the whole of Belgrade. This requires pulling out the boundary for the whole of the Belgrade district and combining it with the boundaries for the rest of the Serbian municipalities.</p>
+<p>Belgrade city has several municipalities, but donations to local political parties for the period between 2012-2018 is given for the whole of Belgrade. This requires removing the boundary for the whole of the Belgrade district and combining it with the boundaries for the rest of the Serbian municipalities.</p>
 <p>In order to filter the necessary geometry for the Belgrade district and to combine it with the sf data for Serbian municipalities we will use <a href="https://r-spatial.github.io/sf/reference/tidyverse.html"><code>tidyverse</code> methods for sf objects</a>. Another issue we need to address is that data also contains information about Kosovo which needs to be included on the map. We will read shape files for Serbian and Kosovo municipalities and combine them into one.</p>
 <pre class="r"><code># filter out geometry of Belgrade&#39;s district
 serbia_districts1 &lt;- serbia_districts1 %&gt;% 

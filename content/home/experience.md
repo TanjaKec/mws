@@ -93,7 +93,7 @@ experience:
   date_start: "2004-09-01"
   description: |- 
     Responsibilities include:
-    * Course Leader for part-time undergraduate Business Administration Business Study, BA(Hons)
+    * Course Leader for part-time undergraduate Business Administration Business Studies, BA(Hons)
     * Business, Arts, Humanities and Social Sciences (BAHSS) research ethics committee lead reviewer
     * Athena SWAN - Data Analyst for The College of Business, Law and Social Sciences 
   location: U.K.

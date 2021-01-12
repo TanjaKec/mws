@@ -916,7 +916,7 @@ Experience has shown that for public health intervention to be successful govern
 <p>If we need to pull the data from the server into R’s memory we can use the <code>collect()</code> function.</p>
 <p>The <code>DBI</code> package can be combined with:</p>
 <ul>
-<li>the <code>dplyr</code> package: to make the <code>tbl</code>s and to work on them using the <code>dplyr</code> syntax</li>
+<li>the <code>dplyr</code> package: to make the <code>tbl</code>s and to work on them using <code>dplyr</code> syntax</li>
 <li>the <code>dbplyr</code> package: allows translation of SQL to dplyr</li>
 <li>the <code>odbc</code>package: provides the odbc drivers, but you could use the functions below with other drivers instead</li>
 </ul>
@@ -997,11 +997,11 @@ Experience has shown that for public health intervention to be successful govern
 &gt; 
 &gt; suppressMessages(GET(url2ecdc, write_disk(tf &lt;- tempfile(fileext = &quot;.xlsx&quot;))))</code></pre>
 <pre><code>## Response [https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-2020-11-30.xlsx]
-##   Date: 2021-01-07 16:47
+##   Date: 2021-01-12 17:22
 ##   Status: 200
 ##   Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 ##   Size: 3.41 MB
-## &lt;ON DISK&gt;  /var/folders/71/96w85flx3yl928r2hzpfwvd00000gp/T//RtmpbKjYEN/file330122d2408.xlsx</code></pre>
+## &lt;ON DISK&gt;  /var/folders/71/96w85flx3yl928r2hzpfwvd00000gp/T//Rtmph2SAt7/filefb413e6bacdc.xlsx</code></pre>
 <pre class="r"><code>&gt; covid_world &lt;- read_excel(tf)</code></pre>
 <p>We will set up the database connection to work on <code>covid_world</code> data.</p>
 <pre class="r"><code>&gt; SQLcon &lt;- dbConnect(RSQLite::SQLite(), &quot;:memory:&quot;)

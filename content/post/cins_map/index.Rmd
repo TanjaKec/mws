@@ -50,7 +50,7 @@ The visualisation needs to
 - indicate the development group for each Serbian municipality
 - display donations to local political parties for the period between 2012-2018 for each municipality
 
-Belgrade city has several municipalities, but donations to local political parties for the period between 2012-2018 is given for the whole of Belgrade. This requires pulling out the boundary for the whole of the Belgrade district and combining it with the boundaries for the rest of the Serbian municipalities.
+Belgrade city has several municipalities, but donations to local political parties for the period between 2012-2018 is given for the whole of Belgrade. This requires removing the boundary for the whole of the Belgrade district and combining it with the boundaries for the rest of the Serbian municipalities.
 
 In order to filter the necessary geometry for the Belgrade district and to combine it with the sf data for Serbian municipalities we will use [`tidyverse` methods for sf objects](https://r-spatial.github.io/sf/reference/tidyverse.html). Another issue we need to address is that data also contains information about Kosovo which needs to be included on the map. We will read shape files for Serbian and Kosovo municipalities and combine them into one. 
 
