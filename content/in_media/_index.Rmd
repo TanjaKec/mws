@@ -12,8 +12,8 @@ library(knitr)
 
 [Netokracija:](https://www.netokracija.rs) [Data Science može se primeniti i u medijskom poslu – a takvo novinarstvo polako se razvija i u Srbiji](https://www.netokracija.rs/data-journalism-srbija-181381)
 
-```{r netokracija, out.extra='style="border: none;"', echo = FALSE, out.align="center"}
-knitr::include_url('https://www.netokracija.rs/data-journalism-srbija-181381/')
+```{r netokracija, out.extra='style="border: none;"', echo = FALSE}
+knitr::include_url('https://www.netokracija.rs/data-journalism-srbija-181381')
 ```
 
 
