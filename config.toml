@@ -111,5 +111,5 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
     path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy"
 
 [frontmatter]
-date = ["date", "publishDate", "lastmod"]
+date = ["date", "publishDate"]
 publishDate = ["publishDate", "date"]
