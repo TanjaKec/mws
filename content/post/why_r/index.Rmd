@@ -3,6 +3,7 @@ title: "Why R? An illustration through the use of ggplot and magick"
 author: "Tanja"
 date: "2017-08-27"
 output: html_document
+tags: ['rstats', 'visualisation']
 ---
 
 ```{r setup, include=FALSE}

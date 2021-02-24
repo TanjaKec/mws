@@ -3,6 +3,7 @@ title: "Covid UK: How to do it in R"
 author: "Tanja"
 date: "2020-11-30"
 output: html_document
+tags: ['SQL', 'dbplyr', 'wrangling', 'visualisation']
 ---
 
 
