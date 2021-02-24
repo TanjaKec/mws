@@ -10,10 +10,18 @@ library(htmlwidgets)
 library(knitr)
 ```
 
+[Netokracija:](https://www.netokracija.rs) [Data Science može se primeniti i u medijskom poslu – a takvo novinarstvo polako se razvija i u Srbiji](https://www.netokracija.rs/data-journalism-srbija-181381)
+
+```{r netokracija, out.extra='style="border: none;"', echo = FALSE, out.align="center"}
+knitr::include_url('https://www.netokracija.rs/data-journalism-srbija-181381/')
+```
+
+
+---
 
 - [Danas: ](https://www.danas.rs/) [ Kako se kretalo širenje korona virusa u Srbiji od marta do danas?](https://www.danas.rs/naslovna/naslovna-za-21-jul-2020/)
 
-```{r danas, out.extra='style="border: none;"', fig.cap="Featered article", echo = FALSE}
+```{r danas, out.extra='style="border: none;"', echo = FALSE}
 knitr::include_url('https://www.danas.rs/drustvo/kako-se-kretalo-sirrenje-korona-virus-u-srbiji-od-marta-do-danas/')
 ```
 
@@ -33,7 +41,7 @@ knitr::include_url('https://www.danas.rs/drustvo/kako-se-kretalo-sirrenje-korona
 
  - [Kreatori i alati: Tatjana Kecojević, Data Scientist](https://startit.rs/kreatori-i-alati-tatjana-kecojevic-data-scientist/)
 
-```{r startit, out.extra='style="border: none;"', fig.cap="Featered article", echo = FALSE}
+```{r startit, out.extra='style="border: none;"', echo = FALSE}
 knitr::include_url('https://startit.rs/kreatori-i-alati-tatjana-kecojevic-data-scientist/')
 ```
 

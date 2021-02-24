@@ -3,6 +3,7 @@ title: "Coronavirus: See How Many Medical Ventilators There Are in Your Town"
 author: "Tanja"
 date: "2020-03-27"
 output: html_document
+tags: ['visualisation', 'COVID-19', 'leaflet']
 ---
 
 ```{r setup, include=FALSE}
