@@ -1179,11 +1179,11 @@ Experience has shown that for public health intervention to be successful govern
 &amp;gt; 
 &amp;gt; suppressMessages(GET(url2ecdc, write_disk(tf &amp;lt;- tempfile(fileext = &amp;quot;.xlsx&amp;quot;))))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Response [https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-2020-11-30.xlsx]
-##   Date: 2021-02-24 15:21
+##   Date: 2021-01-12 17:22
 ##   Status: 200
 ##   Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 ##   Size: 3.41 MB
-## &amp;lt;ON DISK&amp;gt;  /var/folders/71/96w85flx3yl928r2hzpfwvd00000gp/T//RtmpXDluZd/file2baa49588639.xlsx&lt;/code&gt;&lt;/pre&gt;
+## &amp;lt;ON DISK&amp;gt;  /var/folders/71/96w85flx3yl928r2hzpfwvd00000gp/T//Rtmph2SAt7/filefb413e6bacdc.xlsx&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;&amp;gt; covid_world &amp;lt;- read_excel(tf)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We will set up the database connection to work on &lt;code&gt;covid_world&lt;/code&gt; data.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;&amp;gt; SQLcon &amp;lt;- dbConnect(RSQLite::SQLite(), &amp;quot;:memory:&amp;quot;)

@@ -3,7 +3,6 @@ title: "Covid UK: How to do it in R"
 author: "Tanja"
 date: "2020-11-30"
 output: html_document
-tags: ['SQL', 'dbplyr', 'wrangling', 'visualisation']
 ---
 
 <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
@@ -170,11 +169,11 @@ Experience has shown that for public health intervention to be successful govern
 &gt; 
 &gt; suppressMessages(GET(url2ecdc, write_disk(tf &lt;- tempfile(fileext = &quot;.xlsx&quot;))))</code></pre>
 <pre><code>## Response [https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-2020-11-30.xlsx]
-##   Date: 2021-02-24 15:21
+##   Date: 2021-01-12 17:22
 ##   Status: 200
 ##   Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 ##   Size: 3.41 MB
-## &lt;ON DISK&gt;  /var/folders/71/96w85flx3yl928r2hzpfwvd00000gp/T//RtmpXDluZd/file2baa49588639.xlsx</code></pre>
+## &lt;ON DISK&gt;  /var/folders/71/96w85flx3yl928r2hzpfwvd00000gp/T//Rtmph2SAt7/filefb413e6bacdc.xlsx</code></pre>
 <pre class="r"><code>&gt; covid_world &lt;- read_excel(tf)</code></pre>
 <p>We will set up the database connection to work on <code>covid_world</code> data.</p>
 <pre class="r"><code>&gt; SQLcon &lt;- dbConnect(RSQLite::SQLite(), &quot;:memory:&quot;)
