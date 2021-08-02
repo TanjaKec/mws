@@ -46,6 +46,7 @@ experience:
   title: Founder
 - company: DS Europe Conference
   company_url: "https://datasciconference.com/"
+  date_end: "2020-11-20"
   date_start: "2019-02-01"
   description: |- 
     Responsibilities include:
@@ -57,6 +58,7 @@ experience:
   date_start: "2018-12-01"
   description: |- 
     Responsibilities include:
+    * Organiser and coordinator of the WiDS Central and Eastern Europe 2021 
     * Organiser and coordinator of the WiDS Subotica events
   location: Serbia
   title: Ambassador
