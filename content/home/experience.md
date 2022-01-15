@@ -25,6 +25,14 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   You can begin a multiline `description` using YAML's `|-`.
 experience:
+- company: WOMEN in STEM Regional Network
+  date_start: "2021-09-01"
+  description: |- 
+    Responsibilities include:
+    * Lead for Serbian National WOMEN in STEM Network
+    * Programme Adviser
+  location: Western Balkan Region | Serbia
+  title: Council Member 
 - company: DS Serbia
   company_url: "https://datasciconference.com/"
   date_start: "2020-09-01"
